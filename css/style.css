@@ -1,0 +1,224 @@
+.topBar {
+  height: 5vh;
+  background-color: #F58445;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.topBar .fbIcon {
+  width: 40%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  text-decoration: none;
+  color: #fff;
+}
+
+.topBar .fbIcon i {
+  font-size: 20px;
+  margin-left: 20px;
+}
+
+.topBar .fbIcon h1 {
+  font-size: 15px;
+  margin-left: 10px;
+  font-weight: 300;
+}
+
+.topBar .phoneMailContainer {
+  width: 70%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.topBar .phoneMailContainer .phone {
+  height: 100%;
+  text-decoration: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #fff;
+}
+
+.topBar .phoneMailContainer .phone i {
+  font-size: 20px;
+  margin-right: 10px;
+}
+
+.topBar .phoneMailContainer .phone h1 {
+  font-size: 15px;
+  font-weight: 300;
+  margin-right: 20px;
+}
+
+.topBar .phoneMailContainer .mail {
+  height: 100%;
+  text-decoration: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #fff;
+}
+
+.topBar .phoneMailContainer .mail i {
+  font-size: 20px;
+  margin-right: 10px;
+}
+
+.topBar .phoneMailContainer .mail h1 {
+  font-size: 15px;
+  font-weight: 300;
+  margin-right: 20px;
+}
+
+@media (max-width: 576px) {
+  .topBar {
+    display: none;
+  }
+}
+
+nav {
+  height: 10vh;
+  background-color: #fff;
+  position: relative;
+}
+
+nav .logo {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  margin-left: 20px;
+  background-color: #F58445;
+}
+
+nav .list {
+  position: absolute;
+  display: none;
+  list-style-type: none;
+}
+
+nav .list a {
+  text-decoration: none;
+  color: #000;
+}
+
+nav .burger {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  background-color: #F58445;
+  border-bottom-left-radius: 80px;
+}
+
+@media (max-width: 576px) {
+  nav .logo {
+    height: 50px;
+    width: 20%;
+  }
+  nav .burger {
+    height: 100%;
+    width: 80px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  nav .list {
+    height: 0;
+    width: 100%;
+    right: 0;
+    top: 0;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    background-color: #F58445;
+    -webkit-transition: .5s linear;
+    transition: .5s linear;
+  }
+  nav .showNav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    height: 100vh;
+  }
+}
+
+@media (min-width: 1200px) {
+  nav .logo {
+    height: calc(100% - 40px);
+    width: 10%;
+  }
+  nav .list {
+    height: 100%;
+    width: 80%;
+    right: 0;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+            transform: translateY(-50%);
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    margin-right: 20px;
+  }
+  nav .list li {
+    margin-right: 20px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    height: 100%;
+  }
+  nav .list li a {
+    margin-right: 20px;
+  }
+  nav .burger {
+    display: none;
+  }
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+}
+/*# sourceMappingURL=style.css.map */

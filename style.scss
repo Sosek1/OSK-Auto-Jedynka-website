@@ -1,0 +1,10 @@
+@import 'variables';
+@import 'homepage';
+@import 'mixins';
+@import 'menu';
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: $font;
+}
