@@ -10,7 +10,9 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400&display=swap" rel="stylesheet">
 
     <script src="https://kit.fontawesome.com/2e3d9b3214.js" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="./css/style.css">
 
     <title>Auto Jedynka</title>
@@ -37,7 +39,7 @@
     <nav>
         <div class="logo"></div>
         <div class="list">
-            <li><a href="#">Strona główna</a></li>
+            <li><a href="#" style="color:#F58445;">Strona główna</a></li>
             <li><a href="#">Oferta</a></li>
             <li><a href="#">FAQ</a></li>
             <li><a href="#">Galeria</a></li>
@@ -46,7 +48,73 @@
         <div class="burger"></div>
     </nav>
 
+    <div class="banner">
+        <div class="filter">
+            <h1>OSK Auto Jedynka</h1>
+            <h2><span class="orange">Pierwszo</span>rzędne kursy Jazdy w Krakowie</h2>
+        </div>
+        <i class="fas fa-trophy"></i>
+        <div class="modal">
+            <i class="fas fa-times close"></i>
+            <i class="fas fa-medal"></i>
+            <h1>Pierwsze miejsce w rankingu szkół nauki jazdy w Krakowie w 2014 roku</h1>
+        </div>
+        <div class="enroll">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <a href="tel:+503665669">Zapisz się na kurs</a>
+        </div>
+    </div>
+    <div class="title">Cechy naszych <span class="orange">kursów</span></div>
+    <div class="features">
+        <div class="circle" data-aos="zoom-in">
+            <i class="fas fa-user-graduate"></i>
+        </div>
+        <div class="circle" data-aos="zoom-in">
+            <i class="fas fa-shield-alt"></i>
+        </div>
+        <div class="circle" data-aos="zoom-in">
+            <i class="fas fa-user-clock"></i>
+        </div>
+        <div class="circle " data-aos="zoom-in">
+            <i class="fas fa-user-friends"></i>
+        </div>
+        <h2 class="feature">Wysoka zdawalność</h2>
+        <h3 class="feature">Bezpieczeństwo w trakcie jazdy</h3>
+        <h4 class="feature">Elastyczne terminy</h4>
+        <h5 class="feature">Doświadczeni instruktorzy</h5>
+    </div>
+
+    <div class="title">O <span class="orange">nas</span></div>
+    <div class="about" data-aos="fade-up">
+        Na przestrzeni lat udało nam się wyszkolić wielu kierowców. OSK Jedynka może pochwalić się wysoką zdawalnością
+        egzaminów praktycznych jak i teoretycznych, za pierwszym razem. Uczestnicy naszych kursów mogą potwierdzić, że
+        <span class="orange">po nas nikt nie musi douczać.</span>
+    </div>
+
+    <div class="title">Jedynka w <span class="orange">liczbach</span></div>
+
+    <div class="numbers">
+
+        <div class="filter"></div>
+        <i class="fas fa-graduation-cap"></i>
+        <div class="procent eighty">80%</div>
+        <div class="property graduation">Wysoka zdawalność</div>
+        <i class="fas fa-users"></i>
+        <div class="procent thousand">1000</div>
+        <div class="property students">Liczba kursantów</div>
+        <i class="fas fa-history"></i>
+        <div class="procent thirteen">13%</div>
+        <div class="property years">Doświadczenie</div>
+    </div>
+
     <script src="menu.js"></script>
+    <script src="modal.js"></script>
+    <script>
+        AOS.init();
+    </script>
 
 </body>
 

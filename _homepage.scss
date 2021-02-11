@@ -2,8 +2,8 @@
 
 .topBar {
     height: 5vh;
-    background-color: $first-color;
     display: flex;
+    background-color: $first-color;
 
     .fbIcon {
         width: 40%;
@@ -15,13 +15,13 @@
         color: $second-color;
 
         i {
-            font-size: 20px;
             margin-left: 20px;
+            font-size: 20px;
         }
 
         h1 {
-            font-size: 15px;
             margin-left: 10px;
+            font-size: 15px;
             font-weight: $font-weight;
         }
 
@@ -36,46 +36,1043 @@
 
         .phone {
             height: 100%;
-            text-decoration: none;
             display: flex;
             align-items: center;
             color: $second-color;
+            text-decoration: none;
 
             i {
-                font-size: 20px;
                 margin-right: 10px;
+                font-size: 20px;
             }
 
             h1 {
+                margin-right: 20px;
                 font-size: 15px;
                 font-weight: $font-weight;
-                margin-right: 20px;
             }
         }
 
         .mail {
             height: 100%;
-            text-decoration: none;
             display: flex;
             align-items: center;
             color: $second-color;
+            text-decoration: none;
 
             i {
-                font-size: 20px;
                 margin-right: 10px;
+                font-size: 20px;
             }
 
             h1 {
+                margin-right: 20px;
                 font-size: 15px;
                 font-weight: $font-weight;
-                margin-right: 20px;
             }
         }
     }
+}
+
+.banner {
+    background-image: url(banner.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+
+    .filter {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+        background-color: $third-color;
+        opacity: 0.6;
+
+        h1 {
+            text-align: center;
+            z-index: 2;
+            color: $second-color;
+            text-shadow: 1px 1px $third-color;
+        }
+
+        h2 {
+            text-align: center;
+            z-index: 2;
+            color: $second-color;
+            text-shadow: 1px 1px $third-color;
+        }
+    }
+
+    .fa-trophy {
+        position: absolute;
+        color: $first-color;
+    }
+
+    .modal {
+        border-radius: 6px;
+        padding: 10px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        z-index: 2;
+        justify-content: space-around;
+        background-color: #fff;
+        border: 5px solid $first-color;
+
+        .close {
+            font-size: 20px;
+            margin: 0;
+            flex-basis: 5%;
+            align-self: flex-end;
+        }
+
+        h1 {
+            flex-basis: 70%;
+            text-align: center;
+            font-weight: 300;
+        }
+
+        i {
+            flex-basis: 25%;
+            color: $first-color;
+        }
+    }
+
+    .close,
+    .fa-trophy:hover {
+        cursor: pointer;
+    }
+
+    .enroll {
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: $first-color;
+        border: 1px solid $first-color;
+
+
+        a {
+            color: $second-color;
+            font-weight: 300;
+            text-decoration: none;
+        }
+
+        span {
+            display: block;
+            position: absolute;
+            background-color: $second-color;
+        }
+
+        span:nth-child(1) {
+            left: 0;
+            bottom: 0;
+            width: 2px;
+            height: 100%;
+            transform: scaleY(0);
+            transform-origin: bottom;
+            transition: transform 0.5s;
+
+        }
+
+        span:nth-child(2) {
+            left: 0;
+            bottom: 0;
+            width: 100%;
+            height: 2px;
+            transform: scaleX(0);
+            transform-origin: right;
+            transition: transform 0.5s;
+        }
+
+        span:nth-child(3) {
+            right: 0;
+            bottom: 0;
+            width: 2px;
+            height: 100%;
+            transform: scaleY(0);
+            transform-origin: top;
+            transition: transform 0.5s;
+            transition-delay: 0.3s;
+        }
+
+        span:nth-child(4) {
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 2px;
+            transform: scaleX(0);
+            transform-origin: left;
+            transition: transform 0.5s;
+            transition-delay: 0.3s;
+        }
+    }
+}
+
+.enroll:hover {
+    cursor: pointer;
+}
+
+.enroll:hover span:nth-child(1) {
+    transform: scaleY(1);
+    transform-origin: top;
+    transition: transform 0.5s;
+}
+
+.enroll:hover span:nth-child(2) {
+    transform: scaleX(1);
+    transform-origin: left;
+    transition: transform 0.5s;
+}
+
+.enroll:hover span:nth-child(3) {
+    transform: scaleY(1);
+    transform-origin: bottom;
+    transition: transform 0.5s;
+    transition-delay: 0.3s;
+}
+
+.enroll:hover span:nth-child(4) {
+    transform: scaleX(1);
+    transform-origin: right;
+    transition: transform 0.5s;
+    transition-delay: 0.3s;
+}
+
+.title {
+    font-weight: 400;
+    text-align: center;
+    padding-bottom: 2px;
+    color: $fourth-color;
+    border-bottom: 2px solid $fourth-color;
+}
+
+.features {
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    overflow: hidden;
+
+    .circle {
+        @include center;
+        border: 1px solid $first-color;
+        border-radius: 100px;
+
+        i {
+            color: $first-color;
+        }
+    }
+
+    .feature {
+        text-align: center;
+        font-weight: 400;
+    }
+}
+
+.about {
+    width: 50%;
+    margin: 0 auto;
+    text-align: center;
+    color: $third-color;
+}
+
+.numbers {
+    background-image: url(taxi-1209542_1920.jpg);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    display: grid;
+    align-items: center;
+    justify-items: center;
+
+    i {
+        z-index: 3;
+        color: $first-color;
+    }
+
+    .procent {
+        z-index: 3;
+        color: $second-color;
+        font-weight: 200;
+    }
+
+    .property {
+        z-index: 3;
+        color: $second-color;
+        font-weight: 200;
+    }
+
+    .graduation {
+        grid-area: 3/1/3/2;
+    }
+
+    .students {
+        grid-area: 3/2/3/3;
+    }
+
+    .years {
+        grid-area: 3/3/3/4;
+    }
+
+    .eighty {
+        grid-area: 2/1/2/2;
+    }
+
+    .thousand {
+        grid-area: 2/2/2/3;
+    }
+
+    .thirteen {
+        grid-area: 2/3/2/4;
+    }
+
+    .filter {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        z-index: 1;
+        background-color: $third-color;
+        opacity: 0.6;
+        z-index: 3;
+    }
+}
+
+.orange {
+    color: $first-color;
 }
 
 @include media-sm {
     .topBar {
         display: none;
     }
+
+    .banner {
+        height: 90vh;
+
+        .filter {
+            h1 {
+                font-size: 30px;
+                margin-top: 30px;
+            }
+
+            h2 {
+                font-size: 18px;
+            }
+        }
+
+        .fa-trophy {
+            left: 50%;
+            transform: translateX(-50%);
+            bottom: 30px;
+            font-size: 35px;
+        }
+
+        .enroll {
+            bottom: 90px;
+            width: 170px;
+            height: 50px;
+
+            a {
+                font-size: 15px;
+            }
+        }
+
+        .modal {
+            width: 200px;
+            height: 200px;
+
+            h1 {
+                font-size: 20px;
+            }
+
+            i {
+                font-size: 40px;
+            }
+        }
+    }
+
+    .title {
+        width: 300px;
+        margin: 50px auto 52px auto;
+        font-size: 25px;
+    }
+
+    .features {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(8, 1fr);
+
+        .circle {
+            width: 80px;
+            height: 80px;
+            @include center;
+
+            i {
+                font-size: 40px;
+            }
+        }
+
+        h2 {
+            grid-area: 2/1/2/1;
+        }
+
+        h3 {
+            grid-area: 4/1/4/1;
+        }
+
+        h4 {
+            grid-area: 6/1/6/1;
+        }
+
+        h5 {
+            grid-area: 8/1/8/1;
+        }
+
+        .feature {
+            font-size: 18px;
+        }
+    }
+
+    .about {
+        font-size: 18px;
+        width: 90%;
+    }
+
+    .numbers {
+        height: 40vh;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+
+        i {
+            font-size: 60px;
+        }
+
+        .procent {
+            font-size: 50px;
+        }
+
+        .property {
+            font-size: 25px;
+        }
+
+        .graduation {
+            grid-area: 3/1/3/2;
+        }
+
+        .students {
+            grid-area: 3/2/3/3;
+        }
+
+        .years {
+            grid-area: 3/3/3/4;
+        }
+
+        .eighty {
+            grid-area: 2/1/2/2;
+        }
+
+        .thousand {
+            grid-area: 2/2/2/3;
+        }
+
+        .thirteen {
+            grid-area: 2/3/2/4;
+        }
+    }
+
+    .numbers {
+        height: 100vh;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(9, 1fr);
+
+        i {
+            font-size: 40px;
+        }
+
+        .procent {
+            font-size: 30px;
+        }
+
+        .property {
+            font-size: 25px;
+        }
+
+        .graduation {
+            grid-area: 3/1/4/1;
+        }
+
+        .students {
+            grid-area: 6/1/7/1;
+        }
+
+        .years {
+            grid-area: 9/1/10/1;
+        }
+
+        .eighty {
+            grid-area: 2/1/3/1;
+        }
+
+        .thousand {
+            grid-area: 5/1/6/1;
+        }
+
+        .thirteen {
+            grid-area: 7/1/8/1;
+        }
+    }
+}
+
+@include media-md-p {
+    .topBar {
+        display: none;
+    }
+
+    .banner {
+        height: 90vh;
+
+        .filter {
+            h1 {
+                font-size: 60px;
+                margin-top: 50px;
+            }
+
+            h2 {
+                font-size: 30px;
+            }
+        }
+
+        .fa-trophy {
+            right: 30px;
+            bottom: 40px;
+            font-size: 50px;
+        }
+
+        .enroll {
+            bottom: 30px;
+            width: 250px;
+            height: 70px;
+
+            a {
+                font-size: 20px;
+            }
+        }
+
+        .modal {
+            width: 300px;
+            height: 300px;
+
+            h1 {
+                font-size: 30px;
+            }
+
+            i {
+                font-size: 60px;
+            }
+        }
+    }
+
+    .title {
+        width: 350px;
+        margin: 50px auto 52px auto;
+        font-size: 28px;
+    }
+
+    .features {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: repeat(4, 1fr);
+
+        .circle {
+            width: 80px;
+            height: 80px;
+            @include center;
+
+            i {
+                font-size: 40px;
+            }
+        }
+
+        h2 {
+            grid-area: 2/1/2/2;
+        }
+
+        h3 {
+            grid-area: 2/2/2/3;
+        }
+
+        h4 {
+            grid-area: 4/1/4/2;
+        }
+
+        h5 {
+            grid-area: 4/2/4/3;
+        }
+
+        .feature {
+            font-size: 20px;
+        }
+    }
+
+    .about {
+        font-size: 20px;
+        width: 70%;
+    }
+
+    .numbers {
+        height: 35vh;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+
+        i {
+            font-size: 50px;
+        }
+
+        .procent {
+            font-size: 30px;
+        }
+
+        .property {
+            font-size: 20px;
+        }
+
+        .graduation {
+            grid-area: 3/1/3/2;
+        }
+
+        .students {
+            grid-area: 3/2/3/3;
+        }
+
+        .years {
+            grid-area: 3/3/3/4;
+        }
+
+        .eighty {
+            grid-area: 2/1/2/2;
+        }
+
+        .thousand {
+            grid-area: 2/2/2/3;
+        }
+
+        .thirteen {
+            grid-area: 2/3/2/4;
+        }
+    }
+}
+
+@include media-md-l {
+    .topBar {
+        display: none;
+    }
+
+    .banner {
+        height: 85vh;
+
+        .filter {
+            h1 {
+                font-size: 40px;
+                margin-top: 50px;
+            }
+
+            h2 {
+                font-size: 20px;
+            }
+        }
+
+        .fa-trophy {
+            right: 20px;
+            bottom: 20px;
+            font-size: 35px;
+        }
+
+        .enroll {
+            bottom: 20px;
+            width: 200px;
+            height: 40px;
+
+            a {
+                font-size: 18px;
+            }
+        }
+
+        .modal {
+            width: 300px;
+            height: 200px;
+
+            h1 {
+                margin-top: 20px;
+                font-size: 20px;
+            }
+
+            i {
+                font-size: 50px;
+            }
+        }
+    }
+
+
+    .title {
+        width: 300px;
+        margin: 50px auto 52px auto;
+        font-size: 25px;
+    }
+
+    .features {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: repeat(4, 1fr);
+
+        .circle {
+            width: 80px;
+            height: 80px;
+            @include center;
+
+            i {
+                font-size: 40px;
+            }
+        }
+
+        h2 {
+            grid-area: 2/1/2/2;
+        }
+
+        h3 {
+            grid-area: 2/2/2/3;
+        }
+
+        h4 {
+            grid-area: 4/1/4/2;
+        }
+
+        h5 {
+            grid-area: 4/2/4/3;
+        }
+
+        .feature {
+            font-size: 18px;
+        }
+    }
+
+    .about {
+        font-size: 18px;
+        width: 90%;
+    }
+
+    .numbers {
+        height: 50vh;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+
+        i {
+            font-size: 35px;
+        }
+
+        .procent {
+            font-size: 25px;
+        }
+
+        .property {
+            font-size: 20px;
+        }
+
+        .graduation {
+            grid-area: 3/1/3/2;
+        }
+
+        .students {
+            grid-area: 3/2/3/3;
+        }
+
+        .years {
+            grid-area: 3/3/3/4;
+        }
+
+        .eighty {
+            grid-area: 2/1/2/2;
+        }
+
+        .thousand {
+            grid-area: 2/2/2/3;
+        }
+
+        .thirteen {
+            grid-area: 2/3/2/4;
+        }
+    }
+}
+
+@include media-lg {
+    .banner {
+        height: 85vh;
+
+        .filter {
+            h1 {
+                font-size: 60px;
+                margin-top: 50px;
+            }
+
+            h2 {
+                font-size: 30px;
+            }
+        }
+
+        .fa-trophy {
+            right: 30px;
+            bottom: 30px;
+            font-size: 60px;
+        }
+
+        .enroll {
+            bottom: 30px;
+            width: 250px;
+            height: 70px;
+        }
+
+        a {
+            font-size: 20px;
+        }
+
+        .modal {
+            width: 300px;
+            height: 300px;
+
+            h1 {
+                margin-top: 20px;
+                font-size: 25px;
+            }
+
+            i {
+                margin-top: 20px;
+                font-size: 60px;
+            }
+        }
+    }
+
+    .title {
+        width: 450px;
+        margin: 50px auto 52px auto;
+        font-size: 35px;
+    }
+
+    .features {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: repeat(4, 1fr);
+
+        .circle {
+            width: 90px;
+            height: 90px;
+            @include center;
+
+            i {
+                font-size: 40px;
+            }
+        }
+
+        h2 {
+            grid-area: 2/1/2/2;
+        }
+
+        h3 {
+            grid-area: 2/2/2/3;
+        }
+
+        h4 {
+            grid-area: 4/1/4/2;
+        }
+
+        h5 {
+            grid-area: 4/2/4/3;
+        }
+
+        .feature {
+            font-size: 20px;
+        }
+    }
+
+    .about {
+        font-size: 20px;
+        width: 70%;
+    }
+
+    .numbers {
+        height: 25vh;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+
+        i {
+            font-size: 60px;
+        }
+
+        .procent {
+            font-size: 40px;
+        }
+
+        .property {
+            font-size: 30px;
+        }
+
+        .graduation {
+            grid-area: 3/1/3/2;
+        }
+
+        .students {
+            grid-area: 3/2/3/3;
+        }
+
+        .years {
+            grid-area: 3/3/3/4;
+        }
+
+        .eighty {
+            grid-area: 2/1/2/2;
+        }
+
+        .thousand {
+            grid-area: 2/2/2/3;
+        }
+
+        .thirteen {
+            grid-area: 2/3/2/4;
+        }
+    }
+}
+
+
+@include media-xl {
+    .banner {
+        height: 70vh;
+
+        .filter {
+            width: 100%;
+            height: 100%;
+            background-color: $third-color;
+            opacity: 0.6;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: flex-start;
+
+            h1 {
+                font-size: 70px;
+                margin-top: 50px;
+            }
+
+            h2 {
+                font-size: 30px;
+            }
+        }
+
+        .fa-trophy {
+            right: 50px;
+            bottom: 50px;
+            font-size: 50px;
+        }
+
+        .enroll {
+            bottom: 50px;
+            width: 200px;
+            height: 50px;
+
+            a {
+                font-size: 20px;
+            }
+        }
+
+        .modal {
+            width: 300px;
+            height: 300px;
+
+            h1 {
+                margin-top: 20px;
+                font-size: 25px;
+            }
+
+            i {
+                margin-top: 20px;
+                font-size: 60px;
+            }
+        }
+    }
+
+    .title {
+        width: 450px;
+        margin: 50px auto 52px auto;
+        font-size: 30px;
+    }
+
+    .features {
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: 1fr 1fr;
+
+        .circle {
+            width: 100px;
+            height: 100px;
+            @include center;
+
+            i {
+                font-size: 50px;
+            }
+        }
+
+        .feature {
+            font-size: 20px;
+        }
+    }
+
+    .about {
+        font-size: 20px;
+    }
+
+    .numbers {
+        height: 40vh;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+
+        i {
+            font-size: 60px;
+        }
+
+        .procent {
+            font-size: 50px;
+        }
+
+        .property {
+            font-size: 30px;
+        }
+
+        .graduation {
+            grid-area: 3/1/3/2;
+        }
+
+        .students {
+            grid-area: 3/2/3/3;
+        }
+
+        .years {
+            grid-area: 3/3/3/4;
+        }
+
+        .eighty {
+            grid-area: 2/1/2/2;
+        }
+
+        .thousand {
+            grid-area: 2/2/2/3;
+        }
+
+        .thirteen {
+            grid-area: 2/3/2/4;
+        }
+    }
+
 }

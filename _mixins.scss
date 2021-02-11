@@ -4,8 +4,14 @@
     }
 }
 
-@mixin media-md {
-    @media (min-width:576px) and (max-width:992px) {
+@mixin media-md-p {
+    @media (min-width:576px) and (max-width:992px) and (orientation:portrait) {
+        @content;
+    }
+}
+
+@mixin media-md-l {
+    @media (min-width:576px) and (max-width:992px) and (orientation:landscape) {
         @content;
     }
 }

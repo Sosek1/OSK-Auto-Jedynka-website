@@ -1,9 +1,9 @@
 .topBar {
   height: 5vh;
-  background-color: #F58445;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  background-color: #F58445;
 }
 
 .topBar .fbIcon {
@@ -23,13 +23,13 @@
 }
 
 .topBar .fbIcon i {
-  font-size: 20px;
   margin-left: 20px;
+  font-size: 20px;
 }
 
 .topBar .fbIcon h1 {
-  font-size: 15px;
   margin-left: 10px;
+  font-size: 15px;
   font-weight: 300;
 }
 
@@ -49,7 +49,6 @@
 
 .topBar .phoneMailContainer .phone {
   height: 100%;
-  text-decoration: none;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -57,22 +56,22 @@
       -ms-flex-align: center;
           align-items: center;
   color: #fff;
+  text-decoration: none;
 }
 
 .topBar .phoneMailContainer .phone i {
-  font-size: 20px;
   margin-right: 10px;
+  font-size: 20px;
 }
 
 .topBar .phoneMailContainer .phone h1 {
+  margin-right: 20px;
   font-size: 15px;
   font-weight: 300;
-  margin-right: 20px;
 }
 
 .topBar .phoneMailContainer .mail {
   height: 100%;
-  text-decoration: none;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -80,29 +79,1191 @@
       -ms-flex-align: center;
           align-items: center;
   color: #fff;
+  text-decoration: none;
 }
 
 .topBar .phoneMailContainer .mail i {
-  font-size: 20px;
   margin-right: 10px;
+  font-size: 20px;
 }
 
 .topBar .phoneMailContainer .mail h1 {
+  margin-right: 20px;
   font-size: 15px;
   font-weight: 300;
-  margin-right: 20px;
+}
+
+.banner {
+  background-image: url(banner.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+.banner .filter {
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  background-color: #000;
+  opacity: 0.6;
+}
+
+.banner .filter h1 {
+  text-align: center;
+  z-index: 2;
+  color: #fff;
+  text-shadow: 1px 1px #000;
+}
+
+.banner .filter h2 {
+  text-align: center;
+  z-index: 2;
+  color: #fff;
+  text-shadow: 1px 1px #000;
+}
+
+.banner .fa-trophy {
+  position: absolute;
+  color: #F58445;
+}
+
+.banner .modal {
+  border-radius: 6px;
+  padding: 10px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  display: none;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  z-index: 2;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  background-color: #fff;
+  border: 5px solid #F58445;
+}
+
+.banner .modal .close {
+  font-size: 20px;
+  margin: 0;
+  -ms-flex-preferred-size: 5%;
+      flex-basis: 5%;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+}
+
+.banner .modal h1 {
+  -ms-flex-preferred-size: 70%;
+      flex-basis: 70%;
+  text-align: center;
+  font-weight: 300;
+}
+
+.banner .modal i {
+  -ms-flex-preferred-size: 25%;
+      flex-basis: 25%;
+  color: #F58445;
+}
+
+.banner .close,
+.banner .fa-trophy:hover {
+  cursor: pointer;
+}
+
+.banner .enroll {
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: #F58445;
+  border: 1px solid #F58445;
+}
+
+.banner .enroll a {
+  color: #fff;
+  font-weight: 300;
+  text-decoration: none;
+}
+
+.banner .enroll span {
+  display: block;
+  position: absolute;
+  background-color: #fff;
+}
+
+.banner .enroll span:nth-child(1) {
+  left: 0;
+  bottom: 0;
+  width: 2px;
+  height: 100%;
+  -webkit-transform: scaleY(0);
+          transform: scaleY(0);
+  -webkit-transform-origin: bottom;
+          transform-origin: bottom;
+  -webkit-transition: -webkit-transform 0.5s;
+  transition: -webkit-transform 0.5s;
+  transition: transform 0.5s;
+  transition: transform 0.5s, -webkit-transform 0.5s;
+}
+
+.banner .enroll span:nth-child(2) {
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 2px;
+  -webkit-transform: scaleX(0);
+          transform: scaleX(0);
+  -webkit-transform-origin: right;
+          transform-origin: right;
+  -webkit-transition: -webkit-transform 0.5s;
+  transition: -webkit-transform 0.5s;
+  transition: transform 0.5s;
+  transition: transform 0.5s, -webkit-transform 0.5s;
+}
+
+.banner .enroll span:nth-child(3) {
+  right: 0;
+  bottom: 0;
+  width: 2px;
+  height: 100%;
+  -webkit-transform: scaleY(0);
+          transform: scaleY(0);
+  -webkit-transform-origin: top;
+          transform-origin: top;
+  -webkit-transition: -webkit-transform 0.5s;
+  transition: -webkit-transform 0.5s;
+  transition: transform 0.5s;
+  transition: transform 0.5s, -webkit-transform 0.5s;
+  -webkit-transition-delay: 0.3s;
+          transition-delay: 0.3s;
+}
+
+.banner .enroll span:nth-child(4) {
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 2px;
+  -webkit-transform: scaleX(0);
+          transform: scaleX(0);
+  -webkit-transform-origin: left;
+          transform-origin: left;
+  -webkit-transition: -webkit-transform 0.5s;
+  transition: -webkit-transform 0.5s;
+  transition: transform 0.5s;
+  transition: transform 0.5s, -webkit-transform 0.5s;
+  -webkit-transition-delay: 0.3s;
+          transition-delay: 0.3s;
+}
+
+.enroll:hover {
+  cursor: pointer;
+}
+
+.enroll:hover span:nth-child(1) {
+  -webkit-transform: scaleY(1);
+          transform: scaleY(1);
+  -webkit-transform-origin: top;
+          transform-origin: top;
+  -webkit-transition: -webkit-transform 0.5s;
+  transition: -webkit-transform 0.5s;
+  transition: transform 0.5s;
+  transition: transform 0.5s, -webkit-transform 0.5s;
+}
+
+.enroll:hover span:nth-child(2) {
+  -webkit-transform: scaleX(1);
+          transform: scaleX(1);
+  -webkit-transform-origin: left;
+          transform-origin: left;
+  -webkit-transition: -webkit-transform 0.5s;
+  transition: -webkit-transform 0.5s;
+  transition: transform 0.5s;
+  transition: transform 0.5s, -webkit-transform 0.5s;
+}
+
+.enroll:hover span:nth-child(3) {
+  -webkit-transform: scaleY(1);
+          transform: scaleY(1);
+  -webkit-transform-origin: bottom;
+          transform-origin: bottom;
+  -webkit-transition: -webkit-transform 0.5s;
+  transition: -webkit-transform 0.5s;
+  transition: transform 0.5s;
+  transition: transform 0.5s, -webkit-transform 0.5s;
+  -webkit-transition-delay: 0.3s;
+          transition-delay: 0.3s;
+}
+
+.enroll:hover span:nth-child(4) {
+  -webkit-transform: scaleX(1);
+          transform: scaleX(1);
+  -webkit-transform-origin: right;
+          transform-origin: right;
+  -webkit-transition: -webkit-transform 0.5s;
+  transition: -webkit-transform 0.5s;
+  transition: transform 0.5s;
+  transition: transform 0.5s, -webkit-transform 0.5s;
+  -webkit-transition-delay: 0.3s;
+          transition-delay: 0.3s;
+}
+
+.title {
+  font-weight: 400;
+  text-align: center;
+  padding-bottom: 2px;
+  color: #343333;
+  border-bottom: 2px solid #343333;
+}
+
+.features {
+  display: -ms-grid;
+  display: grid;
+  justify-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  overflow: hidden;
+}
+
+.features .circle {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border: 1px solid #F58445;
+  border-radius: 100px;
+}
+
+.features .circle i {
+  color: #F58445;
+}
+
+.features .feature {
+  text-align: center;
+  font-weight: 400;
+}
+
+.about {
+  width: 50%;
+  margin: 0 auto;
+  text-align: center;
+  color: #000;
+}
+
+.numbers {
+  background-image: url(taxi-1209542_1920.jpg);
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  justify-items: center;
+}
+
+.numbers i {
+  z-index: 3;
+  color: #F58445;
+}
+
+.numbers .procent {
+  z-index: 3;
+  color: #fff;
+  font-weight: 200;
+}
+
+.numbers .property {
+  z-index: 3;
+  color: #fff;
+  font-weight: 200;
+}
+
+.numbers .graduation {
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 1;
+  grid-area: 3/1/3/2;
+}
+
+.numbers .students {
+  -ms-grid-row: 3;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 1;
+  grid-area: 3/2/3/3;
+}
+
+.numbers .years {
+  -ms-grid-row: 3;
+  -ms-grid-column: 3;
+  -ms-grid-column-span: 1;
+  grid-area: 3/3/3/4;
+}
+
+.numbers .eighty {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 1;
+  grid-area: 2/1/2/2;
+}
+
+.numbers .thousand {
+  -ms-grid-row: 2;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 1;
+  grid-area: 2/2/2/3;
+}
+
+.numbers .thirteen {
+  -ms-grid-row: 2;
+  -ms-grid-column: 3;
+  -ms-grid-column-span: 1;
+  grid-area: 2/3/2/4;
+}
+
+.numbers .filter {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+  background-color: #000;
+  opacity: 0.6;
+  z-index: 3;
+}
+
+.orange {
+  color: #F58445;
 }
 
 @media (max-width: 576px) {
   .topBar {
     display: none;
   }
+  .banner {
+    height: 90vh;
+  }
+  .banner .filter h1 {
+    font-size: 30px;
+    margin-top: 30px;
+  }
+  .banner .filter h2 {
+    font-size: 18px;
+  }
+  .banner .fa-trophy {
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+    bottom: 30px;
+    font-size: 35px;
+  }
+  .banner .enroll {
+    bottom: 90px;
+    width: 170px;
+    height: 50px;
+  }
+  .banner .enroll a {
+    font-size: 15px;
+  }
+  .banner .modal {
+    width: 200px;
+    height: 200px;
+  }
+  .banner .modal h1 {
+    font-size: 20px;
+  }
+  .banner .modal i {
+    font-size: 40px;
+  }
+  .title {
+    width: 300px;
+    margin: 50px auto 52px auto;
+    font-size: 25px;
+  }
+  .features {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    -ms-grid-rows: (1fr)[8];
+        grid-template-rows: repeat(8, 1fr);
+  }
+  .features .circle {
+    width: 80px;
+    height: 80px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .features .circle i {
+    font-size: 40px;
+  }
+  .features h2 {
+    -ms-grid-row: 2;
+    -ms-grid-column: 1;
+    grid-area: 2/1/2/1;
+  }
+  .features h3 {
+    -ms-grid-row: 4;
+    -ms-grid-column: 1;
+    grid-area: 4/1/4/1;
+  }
+  .features h4 {
+    -ms-grid-row: 6;
+    -ms-grid-column: 1;
+    grid-area: 6/1/6/1;
+  }
+  .features h5 {
+    -ms-grid-row: 8;
+    -ms-grid-column: 1;
+    grid-area: 8/1/8/1;
+  }
+  .features .feature {
+    font-size: 18px;
+  }
+  .about {
+    font-size: 18px;
+    width: 90%;
+  }
+  .numbers {
+    height: 40vh;
+    -ms-grid-columns: (1fr)[3];
+        grid-template-columns: repeat(3, 1fr);
+    -ms-grid-rows: (1fr)[3];
+        grid-template-rows: repeat(3, 1fr);
+  }
+  .numbers i {
+    font-size: 60px;
+  }
+  .numbers .procent {
+    font-size: 50px;
+  }
+  .numbers .property {
+    font-size: 25px;
+  }
+  .numbers .graduation {
+    -ms-grid-row: 3;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 1;
+    grid-area: 3/1/3/2;
+  }
+  .numbers .students {
+    -ms-grid-row: 3;
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 1;
+    grid-area: 3/2/3/3;
+  }
+  .numbers .years {
+    -ms-grid-row: 3;
+    -ms-grid-column: 3;
+    -ms-grid-column-span: 1;
+    grid-area: 3/3/3/4;
+  }
+  .numbers .eighty {
+    -ms-grid-row: 2;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 1;
+    grid-area: 2/1/2/2;
+  }
+  .numbers .thousand {
+    -ms-grid-row: 2;
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 1;
+    grid-area: 2/2/2/3;
+  }
+  .numbers .thirteen {
+    -ms-grid-row: 2;
+    -ms-grid-column: 3;
+    -ms-grid-column-span: 1;
+    grid-area: 2/3/2/4;
+  }
+  .numbers {
+    height: 100vh;
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    -ms-grid-rows: (1fr)[9];
+        grid-template-rows: repeat(9, 1fr);
+  }
+  .numbers i {
+    font-size: 40px;
+  }
+  .numbers .procent {
+    font-size: 30px;
+  }
+  .numbers .property {
+    font-size: 25px;
+  }
+  .numbers .graduation {
+    -ms-grid-row: 3;
+    -ms-grid-row-span: 1;
+    -ms-grid-column: 1;
+    grid-area: 3/1/4/1;
+  }
+  .numbers .students {
+    -ms-grid-row: 6;
+    -ms-grid-row-span: 1;
+    -ms-grid-column: 1;
+    grid-area: 6/1/7/1;
+  }
+  .numbers .years {
+    -ms-grid-row: 9;
+    -ms-grid-row-span: 1;
+    -ms-grid-column: 1;
+    grid-area: 9/1/10/1;
+  }
+  .numbers .eighty {
+    -ms-grid-row: 2;
+    -ms-grid-row-span: 1;
+    -ms-grid-column: 1;
+    grid-area: 2/1/3/1;
+  }
+  .numbers .thousand {
+    -ms-grid-row: 5;
+    -ms-grid-row-span: 1;
+    -ms-grid-column: 1;
+    grid-area: 5/1/6/1;
+  }
+  .numbers .thirteen {
+    -ms-grid-row: 7;
+    -ms-grid-row-span: 1;
+    -ms-grid-column: 1;
+    grid-area: 7/1/8/1;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 992px) and (orientation: portrait) {
+  .topBar {
+    display: none;
+  }
+  .banner {
+    height: 90vh;
+  }
+  .banner .filter h1 {
+    font-size: 60px;
+    margin-top: 50px;
+  }
+  .banner .filter h2 {
+    font-size: 30px;
+  }
+  .banner .fa-trophy {
+    right: 30px;
+    bottom: 40px;
+    font-size: 50px;
+  }
+  .banner .enroll {
+    bottom: 30px;
+    width: 250px;
+    height: 70px;
+  }
+  .banner .enroll a {
+    font-size: 20px;
+  }
+  .banner .modal {
+    width: 300px;
+    height: 300px;
+  }
+  .banner .modal h1 {
+    font-size: 30px;
+  }
+  .banner .modal i {
+    font-size: 60px;
+  }
+  .title {
+    width: 350px;
+    margin: 50px auto 52px auto;
+    font-size: 28px;
+  }
+  .features {
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+    -ms-grid-rows: (1fr)[4];
+        grid-template-rows: repeat(4, 1fr);
+  }
+  .features .circle {
+    width: 80px;
+    height: 80px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .features .circle i {
+    font-size: 40px;
+  }
+  .features h2 {
+    -ms-grid-row: 2;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 1;
+    grid-area: 2/1/2/2;
+  }
+  .features h3 {
+    -ms-grid-row: 2;
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 1;
+    grid-area: 2/2/2/3;
+  }
+  .features h4 {
+    -ms-grid-row: 4;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 1;
+    grid-area: 4/1/4/2;
+  }
+  .features h5 {
+    -ms-grid-row: 4;
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 1;
+    grid-area: 4/2/4/3;
+  }
+  .features .feature {
+    font-size: 20px;
+  }
+  .about {
+    font-size: 20px;
+    width: 70%;
+  }
+  .numbers {
+    height: 35vh;
+    -ms-grid-columns: (1fr)[3];
+        grid-template-columns: repeat(3, 1fr);
+    -ms-grid-rows: (1fr)[3];
+        grid-template-rows: repeat(3, 1fr);
+  }
+  .numbers i {
+    font-size: 50px;
+  }
+  .numbers .procent {
+    font-size: 30px;
+  }
+  .numbers .property {
+    font-size: 20px;
+  }
+  .numbers .graduation {
+    -ms-grid-row: 3;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 1;
+    grid-area: 3/1/3/2;
+  }
+  .numbers .students {
+    -ms-grid-row: 3;
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 1;
+    grid-area: 3/2/3/3;
+  }
+  .numbers .years {
+    -ms-grid-row: 3;
+    -ms-grid-column: 3;
+    -ms-grid-column-span: 1;
+    grid-area: 3/3/3/4;
+  }
+  .numbers .eighty {
+    -ms-grid-row: 2;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 1;
+    grid-area: 2/1/2/2;
+  }
+  .numbers .thousand {
+    -ms-grid-row: 2;
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 1;
+    grid-area: 2/2/2/3;
+  }
+  .numbers .thirteen {
+    -ms-grid-row: 2;
+    -ms-grid-column: 3;
+    -ms-grid-column-span: 1;
+    grid-area: 2/3/2/4;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 992px) and (orientation: landscape) {
+  .topBar {
+    display: none;
+  }
+  .banner {
+    height: 85vh;
+  }
+  .banner .filter h1 {
+    font-size: 40px;
+    margin-top: 50px;
+  }
+  .banner .filter h2 {
+    font-size: 20px;
+  }
+  .banner .fa-trophy {
+    right: 20px;
+    bottom: 20px;
+    font-size: 35px;
+  }
+  .banner .enroll {
+    bottom: 20px;
+    width: 200px;
+    height: 40px;
+  }
+  .banner .enroll a {
+    font-size: 18px;
+  }
+  .banner .modal {
+    width: 300px;
+    height: 200px;
+  }
+  .banner .modal h1 {
+    margin-top: 20px;
+    font-size: 20px;
+  }
+  .banner .modal i {
+    font-size: 50px;
+  }
+  .title {
+    width: 300px;
+    margin: 50px auto 52px auto;
+    font-size: 25px;
+  }
+  .features {
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+    -ms-grid-rows: (1fr)[4];
+        grid-template-rows: repeat(4, 1fr);
+  }
+  .features .circle {
+    width: 80px;
+    height: 80px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .features .circle i {
+    font-size: 40px;
+  }
+  .features h2 {
+    -ms-grid-row: 2;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 1;
+    grid-area: 2/1/2/2;
+  }
+  .features h3 {
+    -ms-grid-row: 2;
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 1;
+    grid-area: 2/2/2/3;
+  }
+  .features h4 {
+    -ms-grid-row: 4;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 1;
+    grid-area: 4/1/4/2;
+  }
+  .features h5 {
+    -ms-grid-row: 4;
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 1;
+    grid-area: 4/2/4/3;
+  }
+  .features .feature {
+    font-size: 18px;
+  }
+  .about {
+    font-size: 18px;
+    width: 90%;
+  }
+  .numbers {
+    height: 50vh;
+    -ms-grid-columns: (1fr)[3];
+        grid-template-columns: repeat(3, 1fr);
+    -ms-grid-rows: (1fr)[3];
+        grid-template-rows: repeat(3, 1fr);
+  }
+  .numbers i {
+    font-size: 35px;
+  }
+  .numbers .procent {
+    font-size: 25px;
+  }
+  .numbers .property {
+    font-size: 20px;
+  }
+  .numbers .graduation {
+    -ms-grid-row: 3;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 1;
+    grid-area: 3/1/3/2;
+  }
+  .numbers .students {
+    -ms-grid-row: 3;
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 1;
+    grid-area: 3/2/3/3;
+  }
+  .numbers .years {
+    -ms-grid-row: 3;
+    -ms-grid-column: 3;
+    -ms-grid-column-span: 1;
+    grid-area: 3/3/3/4;
+  }
+  .numbers .eighty {
+    -ms-grid-row: 2;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 1;
+    grid-area: 2/1/2/2;
+  }
+  .numbers .thousand {
+    -ms-grid-row: 2;
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 1;
+    grid-area: 2/2/2/3;
+  }
+  .numbers .thirteen {
+    -ms-grid-row: 2;
+    -ms-grid-column: 3;
+    -ms-grid-column-span: 1;
+    grid-area: 2/3/2/4;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1200px) {
+  .banner {
+    height: 85vh;
+  }
+  .banner .filter h1 {
+    font-size: 60px;
+    margin-top: 50px;
+  }
+  .banner .filter h2 {
+    font-size: 30px;
+  }
+  .banner .fa-trophy {
+    right: 30px;
+    bottom: 30px;
+    font-size: 60px;
+  }
+  .banner .enroll {
+    bottom: 30px;
+    width: 250px;
+    height: 70px;
+  }
+  .banner a {
+    font-size: 20px;
+  }
+  .banner .modal {
+    width: 300px;
+    height: 300px;
+  }
+  .banner .modal h1 {
+    margin-top: 20px;
+    font-size: 25px;
+  }
+  .banner .modal i {
+    margin-top: 20px;
+    font-size: 60px;
+  }
+  .title {
+    width: 450px;
+    margin: 50px auto 52px auto;
+    font-size: 35px;
+  }
+  .features {
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+    -ms-grid-rows: (1fr)[4];
+        grid-template-rows: repeat(4, 1fr);
+  }
+  .features .circle {
+    width: 90px;
+    height: 90px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .features .circle i {
+    font-size: 40px;
+  }
+  .features h2 {
+    -ms-grid-row: 2;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 1;
+    grid-area: 2/1/2/2;
+  }
+  .features h3 {
+    -ms-grid-row: 2;
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 1;
+    grid-area: 2/2/2/3;
+  }
+  .features h4 {
+    -ms-grid-row: 4;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 1;
+    grid-area: 4/1/4/2;
+  }
+  .features h5 {
+    -ms-grid-row: 4;
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 1;
+    grid-area: 4/2/4/3;
+  }
+  .features .feature {
+    font-size: 20px;
+  }
+  .about {
+    font-size: 20px;
+    width: 70%;
+  }
+  .numbers {
+    height: 25vh;
+    -ms-grid-columns: (1fr)[3];
+        grid-template-columns: repeat(3, 1fr);
+    -ms-grid-rows: (1fr)[3];
+        grid-template-rows: repeat(3, 1fr);
+  }
+  .numbers i {
+    font-size: 60px;
+  }
+  .numbers .procent {
+    font-size: 40px;
+  }
+  .numbers .property {
+    font-size: 30px;
+  }
+  .numbers .graduation {
+    -ms-grid-row: 3;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 1;
+    grid-area: 3/1/3/2;
+  }
+  .numbers .students {
+    -ms-grid-row: 3;
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 1;
+    grid-area: 3/2/3/3;
+  }
+  .numbers .years {
+    -ms-grid-row: 3;
+    -ms-grid-column: 3;
+    -ms-grid-column-span: 1;
+    grid-area: 3/3/3/4;
+  }
+  .numbers .eighty {
+    -ms-grid-row: 2;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 1;
+    grid-area: 2/1/2/2;
+  }
+  .numbers .thousand {
+    -ms-grid-row: 2;
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 1;
+    grid-area: 2/2/2/3;
+  }
+  .numbers .thirteen {
+    -ms-grid-row: 2;
+    -ms-grid-column: 3;
+    -ms-grid-column-span: 1;
+    grid-area: 2/3/2/4;
+  }
+}
+
+@media (min-width: 1200px) {
+  .banner {
+    height: 70vh;
+  }
+  .banner .filter {
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+    opacity: 0.6;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
+  .banner .filter h1 {
+    font-size: 70px;
+    margin-top: 50px;
+  }
+  .banner .filter h2 {
+    font-size: 30px;
+  }
+  .banner .fa-trophy {
+    right: 50px;
+    bottom: 50px;
+    font-size: 50px;
+  }
+  .banner .enroll {
+    bottom: 50px;
+    width: 200px;
+    height: 50px;
+  }
+  .banner .enroll a {
+    font-size: 20px;
+  }
+  .banner .modal {
+    width: 300px;
+    height: 300px;
+  }
+  .banner .modal h1 {
+    margin-top: 20px;
+    font-size: 25px;
+  }
+  .banner .modal i {
+    margin-top: 20px;
+    font-size: 60px;
+  }
+  .title {
+    width: 450px;
+    margin: 50px auto 52px auto;
+    font-size: 30px;
+  }
+  .features {
+    -ms-grid-columns: (1fr)[4];
+        grid-template-columns: repeat(4, 1fr);
+    -ms-grid-rows: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+  }
+  .features .circle {
+    width: 100px;
+    height: 100px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .features .circle i {
+    font-size: 50px;
+  }
+  .features .feature {
+    font-size: 20px;
+  }
+  .about {
+    font-size: 20px;
+  }
+  .numbers {
+    height: 40vh;
+    -ms-grid-columns: (1fr)[3];
+        grid-template-columns: repeat(3, 1fr);
+    -ms-grid-rows: (1fr)[3];
+        grid-template-rows: repeat(3, 1fr);
+  }
+  .numbers i {
+    font-size: 60px;
+  }
+  .numbers .procent {
+    font-size: 50px;
+  }
+  .numbers .property {
+    font-size: 30px;
+  }
+  .numbers .graduation {
+    -ms-grid-row: 3;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 1;
+    grid-area: 3/1/3/2;
+  }
+  .numbers .students {
+    -ms-grid-row: 3;
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 1;
+    grid-area: 3/2/3/3;
+  }
+  .numbers .years {
+    -ms-grid-row: 3;
+    -ms-grid-column: 3;
+    -ms-grid-column-span: 1;
+    grid-area: 3/3/3/4;
+  }
+  .numbers .eighty {
+    -ms-grid-row: 2;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 1;
+    grid-area: 2/1/2/2;
+  }
+  .numbers .thousand {
+    -ms-grid-row: 2;
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 1;
+    grid-area: 2/2/2/3;
+  }
+  .numbers .thirteen {
+    -ms-grid-row: 2;
+    -ms-grid-column: 3;
+    -ms-grid-column-span: 1;
+    grid-area: 2/3/2/4;
+  }
 }
 
 nav {
+  position: relative;
   height: 10vh;
   background-color: #fff;
-  position: relative;
 }
 
 nav .logo {
@@ -117,7 +1278,6 @@ nav .logo {
 
 nav .list {
   position: absolute;
-  display: none;
   list-style-type: none;
 }
 
@@ -132,8 +1292,6 @@ nav .burger {
   right: 0;
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
-  background-color: #F58445;
-  border-bottom-left-radius: 80px;
 }
 
 @media (max-width: 576px) {
@@ -142,8 +1300,9 @@ nav .burger {
     width: 20%;
   }
   nav .burger {
-    height: 100%;
-    width: 80px;
+    height: 50px;
+    width: 50px;
+    margin-right: 20px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -153,10 +1312,11 @@ nav .burger {
     width: 100%;
     right: 0;
     top: 0;
+    display: none;
     -webkit-box-orient: vertical;
-    -webkit-box-direction: reverse;
-        -ms-flex-direction: column-reverse;
-            flex-direction: column-reverse;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
@@ -175,12 +1335,100 @@ nav .burger {
   }
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 576px) and (max-width: 992px) and (orientation: portrait) {
+  nav .logo {
+    height: 50px;
+    width: 20%;
+  }
+  nav .burger {
+    height: 50px;
+    width: 50px;
+    margin-right: 20px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  nav .list {
+    height: 0;
+    width: 100%;
+    right: 0;
+    top: 0;
+    display: none;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    background-color: #F58445;
+    -webkit-transition: .5s linear;
+    transition: .5s linear;
+  }
+  nav .showNav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    height: 100vh;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 992px) and (orientation: landscape) {
+  nav {
+    height: 15vh;
+  }
+  nav .logo {
+    height: 50px;
+    width: 20%;
+  }
+  nav .burger {
+    height: 50px;
+    width: 50px;
+    margin-right: 20px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  nav .list {
+    height: 0;
+    width: 100%;
+    right: 0;
+    top: 0;
+    display: none;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    background-color: #F58445;
+    -webkit-transition: .5s linear;
+    transition: .5s linear;
+  }
+  nav .showNav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    height: 100vh;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1200px) {
   nav .logo {
     height: calc(100% - 40px);
     width: 10%;
   }
   nav .list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
     height: 100%;
     width: 80%;
     right: 0;
@@ -196,7 +1444,7 @@ nav .burger {
     margin-right: 20px;
   }
   nav .list li {
-    margin-right: 20px;
+    height: 100%;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -206,7 +1454,51 @@ nav .burger {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+    margin-right: 20px;
+  }
+  nav .list li a {
+    margin-right: 20px;
+  }
+  nav .burger {
+    display: none;
+  }
+}
+
+@media (min-width: 1200px) {
+  nav .logo {
+    height: calc(100% - 40px);
+    width: 10%;
+  }
+  nav .list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
     height: 100%;
+    width: 80%;
+    right: 0;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+            transform: translateY(-50%);
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    margin-right: 20px;
+  }
+  nav .list li {
+    height: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-right: 20px;
   }
   nav .list li a {
     margin-right: 20px;
