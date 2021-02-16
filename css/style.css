@@ -468,6 +468,187 @@
   z-index: 3;
 }
 
+.opinionContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.opinionContainer .opinion {
+  min-width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.opinionContainer .opinion .photo {
+  width: 150px;
+  height: 150px;
+  border-radius: 150px;
+  background-color: #fff;
+}
+
+.opinionContainer .opinion .photo img {
+  width: 100%;
+  height: 100%;
+  border-radius: 150px;
+}
+
+.opinionContainer .opinion .fa-quote-left {
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  font-size: 20px;
+  margin-right: 20px;
+  color: #F58445;
+}
+
+.opinionContainer .opinion .quotation {
+  margin: 0 30px;
+  text-align: center;
+}
+
+.opinionContainer .opinion .fa-quote-right {
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+  font-size: 20px;
+  margin-left: 20px;
+  color: #F58445;
+}
+
+.opinionContainer .dots {
+  margin: 10px auto 0 auto;
+  width: 100px;
+  height: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.opinionContainer .dots .dot {
+  width: 15px;
+  height: 15px;
+  border-radius: 10px;
+  background-color: #F58445;
+}
+
+.offerContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  overflow-x: hidden;
+}
+
+.offerContainer .offerBox {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-color: #fff;
+  border-top: 2px solid #F58445;
+  -webkit-box-shadow: -5px -5px 10px #b6abab73, 5px 5px 7px rgba(106, 109, 112, 0.288);
+          box-shadow: -5px -5px 10px #b6abab73, 5px 5px 7px rgba(106, 109, 112, 0.288);
+  -webkit-transition: .2s linear;
+  transition: .2s linear;
+}
+
+.offerContainer .offerBox h1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-weight: 400;
+}
+
+.offerContainer .offerBox h2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: #F58445;
+  color: #fff;
+  font-weight: 300;
+}
+
+.offerContainer .offerBox .content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  text-align: center;
+}
+
+.offerContainer .offerBox .more {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: #000;
+  color: #fff;
+}
+
+.offerContainer .offerBox:hover {
+  -webkit-box-shadow: -10px -10px 15px #b6abab73, 10px 10px 13px rgba(106, 109, 112, 0.288);
+          box-shadow: -10px -10px 15px #b6abab73, 10px 10px 13px rgba(106, 109, 112, 0.288);
+  cursor: pointer;
+}
+
 .orange {
   color: #F58445;
 }
@@ -669,6 +850,56 @@
     -ms-grid-column: 1;
     grid-area: 7/1/8/1;
   }
+  .opinionContainer {
+    min-height: 60vh;
+  }
+  .opinionContainer .photo {
+    width: 100px;
+    height: 100px;
+  }
+  .opinionContainer .quotation {
+    font-size: 18px;
+  }
+  .offerContainer {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 100%;
+    min-height: 100vh;
+  }
+  .offerContainer .offerBox {
+    height: 450px;
+    width: 75%;
+    margin: 20px auto;
+  }
+  .offerContainer .offerBox h1 {
+    height: 10%;
+    font-size: 20px;
+  }
+  .offerContainer .offerBox h2 {
+    height: 10%;
+    font-size: 20px;
+  }
+  .offerContainer .offerBox .content {
+    height: 70%;
+    font-size: 15px;
+  }
+  .offerContainer .offerBox .more {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    height: 10%;
+    font-size: 15px;
+    background-color: #000;
+    color: #fff;
+  }
 }
 
 @media (min-width: 576px) and (max-width: 992px) and (orientation: portrait) {
@@ -817,6 +1048,45 @@
     -ms-grid-column: 3;
     -ms-grid-column-span: 1;
     grid-area: 2/3/2/4;
+  }
+  .opinionContainer {
+    min-height: 35vh;
+  }
+  .opinionContainer .photo {
+    width: 100px;
+    height: 100px;
+  }
+  .opinionContainer .quotation {
+    font-size: 20px;
+  }
+  .offerContainer {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 100%;
+    min-height: 100vh;
+  }
+  .offerContainer .offerBox {
+    height: 450px;
+    width: 55%;
+    margin: 20px auto;
+  }
+  .offerContainer .offerBox h1 {
+    height: 10%;
+    font-size: 20px;
+  }
+  .offerContainer .offerBox h2 {
+    height: 10%;
+    font-size: 20px;
+  }
+  .offerContainer .offerBox .content {
+    height: 70%;
+    font-size: 15px;
+  }
+  .offerContainer .offerBox .more {
+    height: 10%;
+    font-size: 15px;
   }
 }
 
@@ -968,6 +1238,44 @@
     -ms-grid-column-span: 1;
     grid-area: 2/3/2/4;
   }
+  .opinionContainer {
+    min-height: 80vh;
+  }
+  .opinionContainer .photo {
+    width: 100px;
+    height: 100px;
+  }
+  .opinionContainer .quotation {
+    font-size: 18px;
+  }
+  .offerContainer {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    width: 100%;
+    min-height: 100vh;
+  }
+  .offerContainer .offerBox {
+    height: 400px;
+    width: 40%;
+  }
+  .offerContainer .offerBox h1 {
+    height: 10%;
+    font-size: 20px;
+  }
+  .offerContainer .offerBox h2 {
+    height: 10%;
+    font-size: 20px;
+  }
+  .offerContainer .offerBox .content {
+    height: 70%;
+    font-size: 15px;
+  }
+  .offerContainer .offerBox .more {
+    height: 10%;
+    font-size: 15px;
+  }
 }
 
 @media (min-width: 992px) and (max-width: 1200px) {
@@ -1116,6 +1424,45 @@
     -ms-grid-column-span: 1;
     grid-area: 2/3/2/4;
   }
+  .opinionContainer {
+    min-height: 30vh;
+  }
+  .opinionContainer .photo {
+    width: 150px;
+    height: 150px;
+  }
+  .opinionContainer .quotation {
+    font-size: 20px;
+  }
+  .offerContainer {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    margin: 0 auto;
+    width: 80%;
+    min-height: 50vh;
+  }
+  .offerContainer .offerBox {
+    height: 400px;
+    width: 40%;
+  }
+  .offerContainer .offerBox h1 {
+    height: 10%;
+    font-size: 20px;
+  }
+  .offerContainer .offerBox h2 {
+    height: 10%;
+    font-size: 20px;
+  }
+  .offerContainer .offerBox .content {
+    height: 70%;
+    font-size: 15px;
+  }
+  .offerContainer .offerBox .more {
+    height: 10%;
+    font-size: 15px;
+  }
 }
 
 @media (min-width: 1200px) {
@@ -1257,6 +1604,45 @@
     -ms-grid-column: 3;
     -ms-grid-column-span: 1;
     grid-area: 2/3/2/4;
+  }
+  .opinionContainer {
+    height: 30vh;
+  }
+  .opinionContainer .photo {
+    width: 150px;
+    height: 150px;
+  }
+  .opinionContainer .quotation {
+    font-size: 20px;
+  }
+  .offerContainer {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    margin: 0 auto;
+    width: 80%;
+    min-height: 50vh;
+  }
+  .offerContainer .offerBox {
+    height: 430px;
+    width: 25%;
+  }
+  .offerContainer .offerBox h1 {
+    height: 10%;
+    font-size: 20px;
+  }
+  .offerContainer .offerBox h2 {
+    height: 10%;
+    font-size: 20px;
+  }
+  .offerContainer .offerBox .content {
+    height: 70%;
+    font-size: 15px;
+  }
+  .offerContainer .offerBox .more {
+    height: 10%;
+    font-size: 15px;
   }
 }
 
