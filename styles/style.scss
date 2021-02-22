@@ -1,10 +1,90 @@
 @import 'variables';
 @import 'homepage';
-@import 'mixins';
+@import 'offer';
 @import 'menu';
+@import 'mixins';
+@import 'faq';
+@import 'gallery';
+@import 'contact';
 
 * {
     padding: 0;
     margin: 0;
     font-family: $font;
+}
+
+.title,
+.titleLong {
+    font-weight: 400;
+    text-align: center;
+    padding-bottom: 2px;
+    color: $fourth-color;
+    border-bottom: 2px solid $fourth-color;
+    margin: 50px auto 52px auto;
+}
+
+.orange {
+    color: $first-color;
+}
+
+@include media-sm {
+    .title {
+        width: 300px;
+        font-size: 25px;
+    }
+
+    .titleLong {
+        width: 300px;
+        font-size: 25px;
+        border-bottom: none;
+    }
+}
+
+@include media-md-p {
+    .title {
+        width: 350px;
+        font-size: 28px;
+    }
+
+    .titleLong {
+        width: 700px;
+        font-size: 28px;
+    }
+}
+
+@include media-md-l {
+    .title {
+        width: 350px;
+        font-size: 28px;
+    }
+
+    .titleLong {
+        width: 500px;
+        font-size: 28px;
+        border-bottom: none;
+    }
+}
+
+@include media-lg {
+    .title {
+        width: 450px;
+        font-size: 30px;
+    }
+
+    .titleLong {
+        width: 800px;
+        font-size: 30px;
+    }
+}
+
+@include media-xl {
+    .title {
+        width: 450px;
+        font-size: 30px;
+    }
+
+    .titleLong {
+        width: 800px;
+        font-size: 30px;
+    }
 }

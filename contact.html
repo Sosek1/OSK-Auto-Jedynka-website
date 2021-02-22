@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400&display=swap" rel="stylesheet">
+
+    <script src="https://kit.fontawesome.com/2e3d9b3214.js" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
+
+    <title>Auto Jedynka - kontakt</title>
+</head>
+
+<body>
+    <div class="topBar">
+        <a href="#" class="fbIcon">
+            <i class="fab fa-facebook-f"></i>
+            <h1>Auto Jedynka</h1>
+        </a>
+        <div class="phoneMailContainer">
+            <a href="tel:+503665669" class="phone">
+                <i class="fas fa-phone-alt"></i>
+                <h1>503 665 669</h1>
+            </a>
+            <a href="#" class="mail">
+                <i class="fas fa-envelope"></i>
+                <h1>autojedynka@gmail.com</h1>
+            </a>
+        </div>
+    </div>
+
+    <nav>
+        <div class="logo"></div>
+        <div class="list">
+            <li><a href="index.html" style="color:#F58445;">Strona główna</a></li>
+            <li><a href="offer.html">Oferta</a></li>
+            <li><a href="#">FAQ</a></li>
+            <li><a href="#">Galeria</a></li>
+            <li><a href="#">Kontakt</a></li>
+        </div>
+        <div class="burger"></div>
+    </nav>
+
+    <form action="contact.php" method="post">
+        <p>Imię i nazwisko</p>
+        <input type="text" id="name" name="visitor_name" pattern=[A-Z\sa-z]{3,20} placeholder="Imię Nazwisko" required>
+        <p>Email</p>
+        <input type="email" id="email" name="visitor_email" placeholder="email@example.com" required>
+        <p>Message</p>
+        <textarea id="message" name="visitor_message" placeholder="Napisz coś..." required></textarea>
+        <button type="submit">Send Message</button>
+    </form>
+
+    <div class="contactBox">
+        <h1>Kontakt</h1>
+        <h2>Dane kontaktowe</h2>
+        <p>Numer telefonu: 503 665 669</p>
+        <p>Email: autojedynka@gmail.com</p>
+        <h2>Adres</h2>
+        <p>OSK - Nefrytowa 5 Kraków</p>
+        <p>Sale wykładowe - Dwór Czeczów ul. Księdza Jerzego Popiełuszki 36</p>
+    </div>
+
+    <footer>
+        <div class="about2">
+            <h1>Auto Jedynka</h1>
+            <p>Ośrodek szkolenia kierowców działający w Krakowie już od 13 lat. Zdobywca pierwszego miejsca w rankingu
+                szkół nauki jazdy w Krakowie w 2014 roku.</p>
+            <h2> <span class="orange">Napisz</span> do nas</h2>
+            <div class="mail">
+                <input type="text" value="autojedynka@gmail.com" class=" mailAdress"></input>
+                <button onclick="copy()" class="copy">
+                    <i class="far fa-copy"></i>
+                </button>
+            </div>
+        </div>
+        <div class="contact">
+            <h1>Kontakt</h1>
+            <div class="contactData">
+                <h2>Adres</h2>
+                <h3>OSK - Nefrytowa 5 Kraków</h3>
+                <h3>Sale wykładowe - Dwór Czeczów
+                    Ul. Popiłuszki</h3>
+                <h2 style="margin-top:20px;">Dane kontaktowe</h2>
+                <h3>Telefon: 503 665 669 </h3>
+                <h3>Email: autojedynka@gmail.com</h3>
+            </div>
+        </div>
+        <div class="menu2">
+            <h1>Menu</h1>
+            <div class="menuOptions">
+                <a href="index.html">Strona główna</a></li>
+                <a href="offer.html" style="color:#F58445;">Oferta</a>
+                <a href="#">FAQ</a>
+                <a href="#">Galeria</a>
+                <a href="#">Kontakt</a>
+            </div>
+        </div>
+        <div class="copyBar">Copyright Auto Jedynka 2021 <span style="margin-left:5px;" class="orange">&copy;</span>
+        </div>
+    </footer>
+
+    <script src="scripts/menu.js"></script>
+    <script src="scripts/copy.js"></script>
+    <script>
+        AOS.init();
+    </script>
+
+</body>
+
+</html>
