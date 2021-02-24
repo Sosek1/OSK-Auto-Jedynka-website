@@ -4,7 +4,6 @@
     if (isset($_POST['name']) && isset($_POST['email'])) {
         $name = $_POST['name'];
         $email = $_POST['email'];
-        $subject = $_POST['subject'];
         $body = $_POST['body'];
 
         require_once "PHPMailer/PHPMailer.php";
@@ -26,7 +25,6 @@
         $mail->isHTML(true);
         $mail->setFrom($email, $name);
         $mail->addAddress("bscode03@gmail.com"); //enter you email address
-        $mail->Subject = ("$email ($subject)");
         $mail->Body = $body;
 
         if ($mail->send()) {

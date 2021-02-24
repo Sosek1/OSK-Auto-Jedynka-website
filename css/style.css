@@ -467,21 +467,15 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .opinionContainer .opinion {
-  min-width: 100%;
+  width: 80%;
   height: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: none;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -528,7 +522,60 @@
   color: #F58445;
 }
 
-.opinionContainer .dots {
+.opinionContainer .next,
+.opinionContainer .prev {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 50px;
+  height: 50px;
+  -webkit-transition: 0.6s ease;
+  transition: 0.6s ease;
+}
+
+.opinionContainer .next i,
+.opinionContainer .prev i {
+  font-size: 40px;
+  color: #F58445;
+}
+
+.opinionContainer .next,
+.opinionContainer .prev:hover {
+  cursor: pointer;
+}
+
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {
+    opacity: .4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fade {
+  from {
+    opacity: .4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.dots {
   margin: 10px auto 0 auto;
   width: 100px;
   height: 20px;
@@ -542,10 +589,17 @@
       justify-content: space-around;
 }
 
-.opinionContainer .dots .dot {
+.dot {
   width: 15px;
   height: 15px;
   border-radius: 10px;
+  border: 2px solid #F58445;
+  background-color: #fff;
+  -webkit-transition: background-color 0.6s ease;
+  transition: background-color 0.6s ease;
+}
+
+.active {
   background-color: #F58445;
 }
 
@@ -633,6 +687,7 @@
           justify-content: center;
   background-color: #000;
   color: #fff;
+  text-decoration: none;
 }
 
 .offerContainer .offerBox:hover {
@@ -655,7 +710,8 @@
 }
 
 .questionsContainer .question {
-  width: 100%;
+  width: 95%;
+  margin: 0 auto;
   height: 20%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1188,6 +1244,10 @@ footer .copyBar {
   .opinionContainer .quotation {
     font-size: 18px;
   }
+  .dot {
+    width: 10px;
+    height: 10px;
+  }
   .offerContainer {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -1448,6 +1508,10 @@ footer .copyBar {
   }
   .opinionContainer .quotation {
     font-size: 20px;
+  }
+  .dot {
+    width: 10px;
+    height: 10px;
   }
   .offerContainer {
     -webkit-box-orient: vertical;
@@ -1740,6 +1804,10 @@ footer .copyBar {
   .opinionContainer .quotation {
     font-size: 18px;
   }
+  .dot {
+    width: 10px;
+    height: 10px;
+  }
   .offerContainer {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
@@ -2028,6 +2096,10 @@ footer .copyBar {
   .opinionContainer .quotation {
     font-size: 20px;
   }
+  .dot {
+    width: 15px;
+    height: 15px;
+  }
   .offerContainer {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
@@ -2312,6 +2384,10 @@ footer .copyBar {
   }
   .opinionContainer .quotation {
     font-size: 20px;
+  }
+  .dot {
+    width: 15px;
+    height: 15px;
   }
   .offerContainer {
     -webkit-box-orient: horizontal;
@@ -2886,6 +2962,7 @@ nav .burger {
 }
 
 .faqContainer {
+  width: 90vw;
   min-height: 80vh;
   margin: 0 auto 50px auto;
 }
@@ -2893,71 +2970,13 @@ nav .burger {
 .faqContainer .question2 {
   font-weight: bold;
   margin-bottom: 5px;
+  font-size: 20px;
 }
 
 .faqContainer .answear {
   font-weight: 400;
   margin-bottom: 10px;
-}
-
-@media (max-width: 576px) {
-  .faqContainer {
-    width: 90vw;
-  }
-  .faqContainer .question2 {
-    font-size: 20px;
-  }
-  .faqContainer .answear {
-    font-size: 18px;
-  }
-}
-
-@media (min-width: 576px) and (max-width: 992px) and (orientation: portrait) {
-  .faqContainer {
-    width: 90vw;
-  }
-  .faqContainer .question2 {
-    font-size: 25px;
-  }
-  .faqContainer .answear {
-    font-size: 20px;
-  }
-}
-
-@media (min-width: 576px) and (max-width: 992px) and (orientation: landscape) {
-  .faqContainer {
-    width: 90vw;
-  }
-  .faqContainer .question2 {
-    font-size: 23px;
-  }
-  .faqContainer .answear {
-    font-size: 18px;
-  }
-}
-
-@media (min-width: 992px) and (max-width: 1200px) {
-  .faqContainer {
-    width: 90vw;
-  }
-  .faqContainer .question2 {
-    font-size: 25px;
-  }
-  .faqContainer .answear {
-    font-size: 20px;
-  }
-}
-
-@media (min-width: 1200px) {
-  .faqContainer {
-    width: 90vw;
-  }
-  .faqContainer .question2 {
-    font-size: 25px;
-  }
-  .faqContainer .answear {
-    font-size: 20px;
-  }
+  font-size: 18px;
 }
 
 .contactContainer {
@@ -3602,13 +3621,11 @@ nav .burger {
   font-family: "Poppins", sans-serif;
 }
 
-.title,
-.titleLong {
+.title {
   font-weight: 400;
   text-align: center;
   padding-bottom: 2px;
   color: #343333;
-  border-bottom: 2px solid #343333;
   margin: 50px auto 52px auto;
 }
 
@@ -3618,57 +3635,30 @@ nav .burger {
 
 @media (max-width: 576px) {
   .title {
-    width: 300px;
     font-size: 25px;
-  }
-  .titleLong {
-    width: 300px;
-    font-size: 25px;
-    border-bottom: none;
   }
 }
 
 @media (min-width: 576px) and (max-width: 992px) and (orientation: portrait) {
   .title {
-    width: 350px;
-    font-size: 28px;
-  }
-  .titleLong {
-    width: 700px;
     font-size: 28px;
   }
 }
 
 @media (min-width: 576px) and (max-width: 992px) and (orientation: landscape) {
   .title {
-    width: 350px;
-    font-size: 28px;
-  }
-  .titleLong {
-    width: 500px;
-    font-size: 28px;
-    border-bottom: none;
+    font-size: 25px;
   }
 }
 
 @media (min-width: 992px) and (max-width: 1200px) {
   .title {
-    width: 450px;
-    font-size: 30px;
-  }
-  .titleLong {
-    width: 800px;
     font-size: 30px;
   }
 }
 
 @media (min-width: 1200px) {
   .title {
-    width: 450px;
-    font-size: 30px;
-  }
-  .titleLong {
-    width: 800px;
     font-size: 30px;
   }
 }

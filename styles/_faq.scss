@@ -1,86 +1,19 @@
 @import 'mixins';
 
 .faqContainer {
+    width: 90vw;
     min-height: 80vh;
     margin: 0 auto 50px auto;
 
     .question2 {
         font-weight: bold;
         margin-bottom: 5px;
+        font-size: 20px;
     }
 
     .answear {
         font-weight: 400;
         margin-bottom: 10px;
-    }
-}
-
-@include media-sm {
-    .faqContainer {
-        width: 90vw;
-
-        .question2 {
-            font-size: 20px;
-        }
-
-        .answear {
-            font-size: 18px;
-        }
-    }
-}
-
-@include media-md-p {
-    .faqContainer {
-        width: 90vw;
-
-        .question2 {
-            font-size: 25px;
-        }
-
-        .answear {
-            font-size: 20px;
-        }
-    }
-}
-
-@include media-md-l {
-    .faqContainer {
-        width: 90vw;
-
-        .question2 {
-            font-size: 23px;
-        }
-
-        .answear {
-            font-size: 18px;
-        }
-    }
-}
-
-@include media-lg {
-    .faqContainer {
-        width: 90vw;
-
-        .question2 {
-            font-size: 25px;
-        }
-
-        .answear {
-            font-size: 20px;
-        }
-    }
-}
-
-@include media-xl {
-    .faqContainer {
-        width: 90vw;
-
-        .question2 {
-            font-size: 25px;
-        }
-
-        .answear {
-            font-size: 20px;
-        }
+        font-size: 18px;
     }
 }

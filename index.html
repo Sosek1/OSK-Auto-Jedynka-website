@@ -41,9 +41,9 @@
         <div class="list">
             <li><a href="index.html" style="color:#F58445;">Strona główna</a></li>
             <li><a href="offer.html">Oferta</a></li>
-            <li><a href="#">FAQ</a></li>
-            <li><a href="#">Galeria</a></li>
-            <li><a href="#">Kontakt</a></li>
+            <li><a href="faq.html">FAQ</a></li>
+            <li><a href="gallery.html">Galeria</a></li>
+            <li><a href="contact.html">Kontakt</a></li>
         </div>
         <div class="burger"></div>
     </nav>
@@ -99,20 +99,22 @@
     <div class="numbers">
         <div class="filter"></div>
         <i class="fas fa-graduation-cap"></i>
-        <div class="procent eighty" data-target="80"></div>
+        <div class="procent eighty" data-target="80">80%</div>
         <div class="property graduation">Wysoka zdawalność</div>
         <i class="fas fa-users"></i>
-        <div class="procent thousand" data-target="1000"></div>
+        <div class="procent thousand" data-target="1000">1000</div>
         <div class="property students">Liczba kursantów</div>
         <i class="fas fa-history"></i>
-        <div class="procent thirteen" data-target="13"></div>
+        <div class="procent thirteen" data-target="13">13</div>
         <div class="property years">Doświadczenie</div>
     </div>
 
     <div class="title"><span class="orange">Opinie</span></div>
 
     <div class="opinionContainer">
-        <div class="opinion">
+        <div class="prev" onclick="plusSlides(-1)">
+            <i class="fas fa-chevron-left"></i></div>
+        <div class="opinion fade">
             <div class="photo">
                 <img src="css/portret1.png" alt="">
             </div>
@@ -122,11 +124,34 @@
                 voluptatum pariatur unde cum ducimus.</p>
             <i class="fas fa-quote-right"></i>
         </div>
-        <div class="dots">
-            <div class="dot"></div>
-            <div class="dot"></div>
-            <div class="dot"></div>
+        <div class="opinion fade">
+            <div class="photo">
+                <img src="css/portret1.png" alt="">
+            </div>
+            <i class="fas fa-quote-left"></i>
+            <p class="quotation">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores, in dicta. Vero
+                aperiam voluptate magnam impedit, delectus sunt quia sapiente sed deleniti illum? Corrupti ad,
+                voluptatum pariatur unde cum ducimus.</p>
+            <i class="fas fa-quote-right"></i>
         </div>
+        <div class="opinion fade">
+            <div class="photo">
+                <img src="css/portret1.png" alt="">
+            </div>
+            <i class="fas fa-quote-left"></i>
+            <p class="quotation">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores, in dicta. Vero
+                aperiam voluptate magnam impedit, delectus sunt quia sapiente sed deleniti illum? Corrupti ad,
+                voluptatum pariatur unde cum ducimus.</p>
+            <i class="fas fa-quote-right"></i>
+        </div>
+        <div class="next" onclick="plusSlides(1)">
+            <i class="fas fa-chevron-right"></i></div>
+    </div>
+
+    <div class=" dots">
+        <div class="dot" onclick="currentSlide(1)"></div>
+        <div class=" dot" onclick="currentSlide(2)"></div>
+        <div class="dot" onclick="currentSlide(3)"></div>
     </div>
 
     <div class="title">Oferta <span class="orange">kursów</span></div>
@@ -143,7 +168,7 @@
                 <p>Materiały edukacyjne gratis</p>
                 <p>Testy egzaminacyjne online</p>
             </div>
-            <div class="more">Więcej</div>
+            <a href="offer.html" class="more">Więcej</a>
         </div>
 
         <div class="offerBox" data-aos="fade-left" data-aos-delay="200">
@@ -158,7 +183,7 @@
                 <p>Materiały edukacyjne gratis</p>
                 <p>Testy egzaminacyjne online</p>
             </div>
-            <div class="more">Więcej</div>
+            <a href="offer.html" class="more">Więcej</a>
         </div>
     </div>
 
@@ -184,14 +209,15 @@
             <span></span>
             <span></span>
             <span></span>
-            <a href="#">Poznaj odpowiedzi</a>
+            <a href="faq.html">Poznaj odpowiedzi</a>
         </div>
     </div>
 
     <footer>
         <div class="about2">
             <h1>Auto Jedynka</h1>
-            <p>Ośrodek szkolenia kierowców działający w Krakowie już od 13 lat. Zdobywca pierwszego miejsca w rankingu
+            <p>Ośrodek szkolenia kierowców działający w Krakowie już od 13 lat. Zdobywca pierwszego miejsca w
+                rankingu
                 szkół nauki jazdy w Krakowie w 2014 roku.</p>
             <h2> <span class="orange">Napisz</span> do nas</h2>
             <div class="mail">
@@ -209,18 +235,18 @@
                 <h3>Sale wykładowe - Dwór Czeczów
                     Ul. Popiłuszki</h3>
                 <h2 style="margin-top:20px;">Dane kontaktowe</h2>
-                <h3>Telefon: 503 665 669 </h3>
+                <h3 style="text-decoration: none; color:#fff;">Telefon: 503 665 669 </h3>
                 <h3>Email: autojedynka@gmail.com</h3>
             </div>
         </div>
         <div class="menu2">
             <h1>Menu</h1>
             <div class="menuOptions">
-                <a href="index.html" style="color:#F58445;">Strona główna</a></li>
+                <a href="index.html" style="color:#F58445;">Strona główna</a>
                 <a href="offer.html">Oferta</a>
-                <a href="#">FAQ</a>
-                <a href="#">Galeria</a>
-                <a href="#">Kontakt</a>
+                <a href="faq.html">FAQ</a>
+                <a href="gallery.html">Galeria</a>
+                <a href="contact.html">Kontakt</a>
             </div>
         </div>
         <div class="copyBar">Copyright Auto Jedynka 2021 <span style="margin-left:5px;" class="orange">&copy;</span>
@@ -229,7 +255,8 @@
 
     <script src="scripts/menu.js"></script>
     <script src="scripts/modal.js"></script>
-    <script src="scripts/counter.js"></script>
+    <script src="scripts/slider.js"></script>
+    <!-- <script src="scripts/counter.js"></script> -->
     <script src="scripts/copy.js"></script>
     <script>
         AOS.init();

@@ -1,10 +1,9 @@
 function sendEmail() {
     var name = $("#name");
     var email = $("#email");
-    var subject = $("#subject");
     var body = $("#body");
 
-    if (isNotEmpty(name) && isNotEmpty(email) && isNotEmpty(subject) && isNotEmpty(body)) {
+    if (isNotEmpty(name) && isNotEmpty(email) && isNotEmpty(body)) {
         $.ajax({
             url: 'sendEmail.php',
             method: 'POST',
@@ -12,7 +11,6 @@ function sendEmail() {
             data: {
                 name: name.val(),
                 email: email.val(),
-                subject: subject.val(),
                 body: body.val()
             },
             success: function (response) {
