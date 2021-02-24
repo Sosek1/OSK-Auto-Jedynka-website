@@ -3015,16 +3015,18 @@ nav .burger {
   padding: 5px 0 0 5px;
 }
 
-.contactContainer form button {
+.contactContainer form .send-btn {
+  text-align: center;
   margin: 0 auto;
   border: none;
   background-color: #F58445;
   color: #fff;
+  cursor: pointer;
 }
 
 .contactContainer form textarea,
 .contactContainer form input,
-.contactContainer form button:focus {
+.contactContainer form .send-btn:focus {
   outline: none;
 }
 
@@ -3105,6 +3107,32 @@ nav .burger {
   font-weight: 400;
 }
 
+.alert-success {
+  z-index: 1;
+  background: #D4EDDA;
+  font-size: 18px;
+  padding: 20px 40px;
+  min-width: 420px;
+  position: fixed;
+  right: 0;
+  top: 10px;
+  border-left: 8px solid #3AD66E;
+  border-radius: 4px;
+}
+
+.alert-error {
+  z-index: 1;
+  background: #FFF3CD;
+  font-size: 18px;
+  padding: 20px 40px;
+  min-width: 420px;
+  position: fixed;
+  right: 0;
+  top: 10px;
+  border-left: 8px solid #FFA502;
+  border-radius: 4px;
+}
+
 @media (max-width: 576px) {
   .contactContainer {
     -ms-grid-columns: 1fr;
@@ -3163,7 +3191,7 @@ nav .burger {
     width: 90%;
     height: 40%;
   }
-  .contactContainer form button {
+  .contactContainer form .send-btn {
     width: 160px;
     height: 40px;
     font-size: 15px;
@@ -3265,7 +3293,7 @@ nav .burger {
     width: 90%;
     height: 40%;
   }
-  .contactContainer form button {
+  .contactContainer form .send-btn {
     width: 200px;
     height: 50px;
     font-size: 20px;
@@ -3367,7 +3395,7 @@ nav .burger {
     width: 90%;
     height: 40%;
   }
-  .contactContainer form button {
+  .contactContainer form .send-btn {
     width: 160px;
     height: 40px;
     font-size: 15px;
@@ -3470,7 +3498,7 @@ nav .burger {
     width: 90%;
     height: 40%;
   }
-  .contactContainer form button {
+  .contactContainer form .send-btn {
     width: 150px;
     height: 40px;
   }
@@ -3572,7 +3600,7 @@ nav .burger {
     width: 90%;
     height: 40%;
   }
-  .contactContainer form button {
+  .contactContainer form .send-btn {
     width: 150px;
     height: 40px;
   }

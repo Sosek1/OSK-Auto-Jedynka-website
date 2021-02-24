@@ -1,3 +1,4 @@
+<?php include 'sendemail.php'; ?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -19,6 +20,9 @@
 </head>
 
 <body>
+
+    <?php echo $alert; ?>
+
     <div class="topBar">
         <a href="#" class="fbIcon">
             <i class="fab fa-facebook-f"></i>
@@ -80,16 +84,14 @@
             </div>
         </div>
         <h1>Napisz do <span class="orange">nas</span></h1>
-        <form id="myForm">
+        <form action="" method="post">
             <p>Imię i nazwisko</p>
-            <input type="text" id="name" placeholder="Imię Nazwisko" required>
+            <input type="text" name="name" placeholder="Imię Nazwisko" required>
             <p>Email</p>
-            <input type="text" id="email" placeholder="email@example.com" required>
-            <!-- <p>Temat</p>
-            <input id="subject" type="text" placeholder=" Wprowadź temat" required> -->
+            <input type="email" name="email" placeholder="email@example.com" required>
             <p>Wiadomość</p>
-            <textarea id="body" placeholder="Napisz coś..." required></textarea>
-            <button type="button" onclick="sendEmail()" value="Send An Email">Wyślij</button>
+            <textarea name="message" placeholder="Napisz coś..." required></textarea>
+            <input type="submit" name="submit" class="send-btn" value="Wyślij">
         </form>
     </div>
 
@@ -135,11 +137,15 @@
 
     <script src="scripts/menu.js"></script>
     <script src="scripts/copy.js"></script>
-    <script src="sendMail.js"></script>
+
     <script>
         AOS.init();
     </script>
-
+    <script type="text/javascript">
+        if (window.history.replaceState) {
+            window.history.replaceState(null, null, window.location.href);
+        }
+    </script>
 </body>
 
 </html>
