@@ -48,30 +48,56 @@
         <div class="burger"></div>
     </nav>
 
-    <form action="contact.php" method="post">
-        <p>Imię i nazwisko</p>
-        <input type="text" id="name" name="visitor_name" pattern=[A-Z\sa-z]{3,20} placeholder="Imię Nazwisko" required>
-        <p>Email</p>
-        <input type="email" id="email" name="visitor_email" placeholder="email@example.com" required>
-        <p>Message</p>
-        <textarea id="message" name="visitor_message" placeholder="Napisz coś..." required></textarea>
-        <button type="submit">Send Message</button>
-    </form>
+    <div class="contactContainer">
+        <h2>Kontakt</h2>
+        <div class="contactBox">
+            <h3>Dane kontaktowe</h3>
+            <div class="contactData">
+                <div class="contactIconBox">
+                    <i class="fas fa-phone-alt"></i>
+                </div>
+                <p>503 665 669</p>
+            </div>
+            <div class="contactData">
+                <div class="contactIconBox">
+                    <i class="fas fa-envelope"></i>
+                </div>
+                <p>autojedynka@gmail.com</p>
+            </div>
+            <h3>Adres</h3>
+            <div class="contactData">
+                <div class="contactIconBox">
+                    <i class="fas fa-map-marker-alt"></i>
+                </div>
+                <p>OSK - Nefrytowa 5 Kraków</p>
+            </div>
 
-    <div class="contactBox">
-        <h1>Kontakt</h1>
-        <h2>Dane kontaktowe</h2>
-        <p>Numer telefonu: 503 665 669</p>
-        <p>Email: autojedynka@gmail.com</p>
-        <h2>Adres</h2>
-        <p>OSK - Nefrytowa 5 Kraków</p>
-        <p>Sale wykładowe - Dwór Czeczów ul. Księdza Jerzego Popiełuszki 36</p>
+            <div class="contactData" style="height:100px;">
+                <div class="contactIconBox">
+                    <i class="fas fa-university"></i>
+                </div>
+                <p>Sale wykładowe - Popiełuszki 36 Kraków</p>
+            </div>
+        </div>
+        <h1>Napisz do <span class="orange">nas</span></h1>
+        <form id="myForm">
+            <p>Imię i nazwisko</p>
+            <input type="text" id="name" placeholder="Imię Nazwisko" required>
+            <p>Email</p>
+            <input type="text" id="email" placeholder="email@example.com" required>
+            <!-- <p>Temat</p>
+            <input id="subject" type="text" placeholder=" Wprowadź temat" required> -->
+            <p>Wiadomość</p>
+            <textarea id="body" placeholder="Napisz coś..." required></textarea>
+            <button type="button" onclick="sendEmail()" value="Send An Email">Wyślij</button>
+        </form>
     </div>
 
     <footer>
         <div class="about2">
             <h1>Auto Jedynka</h1>
-            <p>Ośrodek szkolenia kierowców działający w Krakowie już od 13 lat. Zdobywca pierwszego miejsca w rankingu
+            <p>Ośrodek szkolenia kierowców działający w Krakowie już od 13 lat. Zdobywca pierwszego miejsca w
+                rankingu
                 szkół nauki jazdy w Krakowie w 2014 roku.</p>
             <h2> <span class="orange">Napisz</span> do nas</h2>
             <div class="mail">
@@ -109,6 +135,7 @@
 
     <script src="scripts/menu.js"></script>
     <script src="scripts/copy.js"></script>
+    <script src="sendMail.js"></script>
     <script>
         AOS.init();
     </script>
