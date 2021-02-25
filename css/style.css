@@ -2835,8 +2835,8 @@ nav .dissapear {
             justify-content: center;
     -webkit-clip-path: circle(100px at 90% -20%);
             clip-path: circle(100px at 90% -20%);
-    -webkit-transition: all 1s ease-out;
-    transition: all 1s ease-out;
+    -webkit-transition: all .5s ease-out;
+    transition: all .5s ease-out;
     background-color: #F58445;
   }
   nav .list a {
@@ -2848,35 +2848,11 @@ nav .dissapear {
     display: block;
   }
   nav .list li {
-    opacity: 0;
     margin-bottom: 20px;
   }
   nav .showNav {
+    clip-path: circle(1000px at 90% -10%);
     -webkit-clip-path: circle(1000px at 90% -10%);
-            clip-path: circle(1000px at 90% -10%);
-  }
-  nav .list li:nth-child(1) {
-    -webkit-transition: all 0.5s ease .2s;
-    transition: all 0.5s ease .2s;
-  }
-  nav .list li:nth-child(2) {
-    -webkit-transition: all 0.5s ease .4s;
-    transition: all 0.5s ease .4s;
-  }
-  nav .list li:nth-child(3) {
-    -webkit-transition: all 0.5s ease .6s;
-    transition: all 0.5s ease .6s;
-  }
-  nav .list li:nth-child(4) {
-    -webkit-transition: all 0.5s ease .8s;
-    transition: all 0.5s ease .8s;
-  }
-  nav .list li:nth-child(5) {
-    -webkit-transition: all 0.5s ease .10s;
-    transition: all 0.5s ease .10s;
-  }
-  nav .list li.fade {
-    opacity: 1;
   }
 }
 
@@ -2915,10 +2891,10 @@ nav .dissapear {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    -webkit-clip-path: circle(100px at 90% -30%);
-            clip-path: circle(100px at 90% -30%);
-    -webkit-transition: all 1s ease-out;
-    transition: all 1s ease-out;
+    clip-path: circle(100px at 90% -30%);
+    -webkit-clip-path: circle(1000px at 90% -10%);
+    -webkit-transition: all .5s ease-out;
+    transition: all .5s ease-out;
     background-color: #F58445;
   }
   nav .list a {
@@ -2930,35 +2906,11 @@ nav .dissapear {
     display: block;
   }
   nav .list li {
-    opacity: 0;
     margin-bottom: 20px;
   }
   nav .showNav {
     -webkit-clip-path: circle(2000px at 90% -10%);
             clip-path: circle(2000px at 90% -10%);
-  }
-  nav .list li:nth-child(1) {
-    -webkit-transition: all 0.5s ease .2s;
-    transition: all 0.5s ease .2s;
-  }
-  nav .list li:nth-child(2) {
-    -webkit-transition: all 0.5s ease .4s;
-    transition: all 0.5s ease .4s;
-  }
-  nav .list li:nth-child(3) {
-    -webkit-transition: all 0.5s ease .6s;
-    transition: all 0.5s ease .6s;
-  }
-  nav .list li:nth-child(4) {
-    -webkit-transition: all 0.5s ease .8s;
-    transition: all 0.5s ease .8s;
-  }
-  nav .list li:nth-child(5) {
-    -webkit-transition: all 0.5s ease .10s;
-    transition: all 0.5s ease .10s;
-  }
-  nav .list li.fade {
-    opacity: 1;
   }
 }
 
@@ -3000,10 +2952,10 @@ nav .dissapear {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    -webkit-clip-path: circle(100px at 90% -30%);
-            clip-path: circle(100px at 90% -30%);
-    -webkit-transition: all 1s ease-out;
-    transition: all 1s ease-out;
+    clip-path: circle(100px at 90% -30%);
+    -webkit-clip-path: circle(1000px at 90% -10%);
+    -webkit-transition: all .5s ease-out;
+    transition: all .5s ease-out;
     background-color: #F58445;
   }
   nav .list a {
@@ -3015,36 +2967,11 @@ nav .dissapear {
     display: block;
   }
   nav .list li {
-    opacity: 0;
     margin-bottom: 20px;
   }
   nav .showNav {
     -webkit-clip-path: circle(1000px at 90% -10%);
             clip-path: circle(1000px at 90% -10%);
-  }
-  nav .list li:nth-child(1) {
-    -webkit-transition: all 0.5s ease .2s;
-    transition: all 0.5s ease .2s;
-    margin-top: 50px;
-  }
-  nav .list li:nth-child(2) {
-    -webkit-transition: all 0.5s ease .4s;
-    transition: all 0.5s ease .4s;
-  }
-  nav .list li:nth-child(3) {
-    -webkit-transition: all 0.5s ease .6s;
-    transition: all 0.5s ease .6s;
-  }
-  nav .list li:nth-child(4) {
-    -webkit-transition: all 0.5s ease .8s;
-    transition: all 0.5s ease .8s;
-  }
-  nav .list li:nth-child(5) {
-    -webkit-transition: all 0.5s ease .10s;
-    transition: all 0.5s ease .10s;
-  }
-  nav .list li.fade {
-    opacity: 1;
   }
 }
 

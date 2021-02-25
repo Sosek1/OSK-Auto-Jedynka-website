@@ -98,7 +98,7 @@ nav {
             align-items: center;
             justify-content: center;
             clip-path: circle(100px at 90% -20%);
-            transition: all 1s ease-out;
+            transition: all .5s ease-out;
             background-color: $first-color;
 
             a {
@@ -113,36 +113,12 @@ nav {
         }
 
         .list li {
-            opacity: 0;
             margin-bottom: 20px;
         }
 
         .showNav {
             clip-path: circle(1000px at 90% -10%);
-        }
-
-        .list li:nth-child(1) {
-            transition: all 0.5s ease .2s;
-        }
-
-        .list li:nth-child(2) {
-            transition: all 0.5s ease .4s;
-        }
-
-        .list li:nth-child(3) {
-            transition: all 0.5s ease .6s;
-        }
-
-        .list li:nth-child(4) {
-            transition: all 0.5s ease .8s;
-        }
-
-        .list li:nth-child(5) {
-            transition: all 0.5s ease .10s;
-        }
-
-        .list li.fade {
-            opacity: 1;
+            -webkit-clip-path: circle(1000px at 90% -10%);
         }
     }
 }
@@ -179,7 +155,8 @@ nav {
             align-items: center;
             justify-content: center;
             clip-path: circle(100px at 90% -30%);
-            transition: all 1s ease-out;
+            -webkit-clip-path: circle(1000px at 90% -10%);
+            transition: all .5s ease-out;
             background-color: $first-color;
 
             a {
@@ -194,36 +171,11 @@ nav {
         }
 
         .list li {
-            opacity: 0;
             margin-bottom: 20px;
         }
 
         .showNav {
             clip-path: circle(2000px at 90% -10%);
-        }
-
-        .list li:nth-child(1) {
-            transition: all 0.5s ease .2s;
-        }
-
-        .list li:nth-child(2) {
-            transition: all 0.5s ease .4s;
-        }
-
-        .list li:nth-child(3) {
-            transition: all 0.5s ease .6s;
-        }
-
-        .list li:nth-child(4) {
-            transition: all 0.5s ease .8s;
-        }
-
-        .list li:nth-child(5) {
-            transition: all 0.5s ease .10s;
-        }
-
-        .list li.fade {
-            opacity: 1;
         }
     }
 }
@@ -259,7 +211,8 @@ nav {
             align-items: center;
             justify-content: center;
             clip-path: circle(100px at 90% -30%);
-            transition: all 1s ease-out;
+            -webkit-clip-path: circle(1000px at 90% -10%);
+            transition: all .5s ease-out;
             background-color: $first-color;
 
             a {
@@ -275,37 +228,11 @@ nav {
         }
 
         .list li {
-            opacity: 0;
             margin-bottom: 20px;
         }
 
         .showNav {
             clip-path: circle(1000px at 90% -10%);
-        }
-
-        .list li:nth-child(1) {
-            transition: all 0.5s ease .2s;
-            margin-top: 50px;
-        }
-
-        .list li:nth-child(2) {
-            transition: all 0.5s ease .4s;
-        }
-
-        .list li:nth-child(3) {
-            transition: all 0.5s ease .6s;
-        }
-
-        .list li:nth-child(4) {
-            transition: all 0.5s ease .8s;
-        }
-
-        .list li:nth-child(5) {
-            transition: all 0.5s ease .10s;
-        }
-
-        .list li.fade {
-            opacity: 1;
         }
     }
 }
