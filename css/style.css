@@ -2726,17 +2726,31 @@ nav .logo {
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
   margin-left: 20px;
-  background-color: #F58445;
+  z-index: 3;
+}
+
+nav .logo img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  z-index: 3;
 }
 
 nav .list {
-  position: absolute;
   list-style-type: none;
+  z-index: 2;
 }
 
 nav .list a {
   text-decoration: none;
   color: #000;
+}
+
+nav .list a i {
+  font-size: 30px;
+  color: #fff;
 }
 
 nav .burger {
@@ -2745,12 +2759,53 @@ nav .burger {
   right: 0;
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+nav .burger i {
+  font-size: 25px;
+}
+
+nav .burger .fa-bars {
+  color: #F58445;
+  -webkit-transition: .2s linear;
+  transition: .2s linear;
+}
+
+nav .fa-times {
+  display: none;
+  color: #fff;
+  -webkit-transition: .2s linear;
+  transition: .2s linear;
+}
+
+nav .appear {
+  display: block;
+}
+
+nav .dissapear {
+  display: none;
 }
 
 @media (max-width: 576px) {
+  nav {
+    height: 15vh;
+  }
   nav .logo {
     height: 50px;
     width: 20%;
+  }
+  nav .logo img {
+    height: 80px;
+    z-index: 2;
   }
   nav .burger {
     height: 50px;
@@ -2759,13 +2814,15 @@ nav .burger {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    z-index: 2;
   }
   nav .list {
-    height: 0;
+    position: fixed;
+    height: 100vh;
     width: 100%;
-    right: 0;
-    top: 0;
-    display: none;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -2776,15 +2833,50 @@ nav .burger {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+    -webkit-clip-path: circle(100px at 90% -20%);
+            clip-path: circle(100px at 90% -20%);
+    -webkit-transition: all 1s ease-out;
+    transition: all 1s ease-out;
     background-color: #F58445;
-    -webkit-transition: .5s linear;
-    transition: .5s linear;
+  }
+  nav .list a {
+    color: #fff;
+    font-size: 20px;
+    font-weight: 300;
+  }
+  nav .list .fb {
+    display: block;
+  }
+  nav .list li {
+    opacity: 0;
+    margin-bottom: 20px;
   }
   nav .showNav {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    height: 100vh;
+    -webkit-clip-path: circle(1000px at 90% -10%);
+            clip-path: circle(1000px at 90% -10%);
+  }
+  nav .list li:nth-child(1) {
+    -webkit-transition: all 0.5s ease .2s;
+    transition: all 0.5s ease .2s;
+  }
+  nav .list li:nth-child(2) {
+    -webkit-transition: all 0.5s ease .4s;
+    transition: all 0.5s ease .4s;
+  }
+  nav .list li:nth-child(3) {
+    -webkit-transition: all 0.5s ease .6s;
+    transition: all 0.5s ease .6s;
+  }
+  nav .list li:nth-child(4) {
+    -webkit-transition: all 0.5s ease .8s;
+    transition: all 0.5s ease .8s;
+  }
+  nav .list li:nth-child(5) {
+    -webkit-transition: all 0.5s ease .10s;
+    transition: all 0.5s ease .10s;
+  }
+  nav .list li.fade {
+    opacity: 1;
   }
 }
 
@@ -2793,6 +2885,10 @@ nav .burger {
     height: 50px;
     width: 20%;
   }
+  nav .logo img {
+    height: 80px;
+    z-index: 2;
+  }
   nav .burger {
     height: 50px;
     width: 50px;
@@ -2800,13 +2896,15 @@ nav .burger {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    z-index: 2;
   }
   nav .list {
-    height: 0;
+    position: fixed;
+    height: 100vh;
     width: 100%;
-    right: 0;
-    top: 0;
-    display: none;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -2817,15 +2915,50 @@ nav .burger {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+    -webkit-clip-path: circle(100px at 90% -30%);
+            clip-path: circle(100px at 90% -30%);
+    -webkit-transition: all 1s ease-out;
+    transition: all 1s ease-out;
     background-color: #F58445;
-    -webkit-transition: .5s linear;
-    transition: .5s linear;
+  }
+  nav .list a {
+    color: #fff;
+    font-size: 20px;
+    font-weight: 300;
+  }
+  nav .list .fb {
+    display: block;
+  }
+  nav .list li {
+    opacity: 0;
+    margin-bottom: 20px;
   }
   nav .showNav {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    height: 100vh;
+    -webkit-clip-path: circle(2000px at 90% -10%);
+            clip-path: circle(2000px at 90% -10%);
+  }
+  nav .list li:nth-child(1) {
+    -webkit-transition: all 0.5s ease .2s;
+    transition: all 0.5s ease .2s;
+  }
+  nav .list li:nth-child(2) {
+    -webkit-transition: all 0.5s ease .4s;
+    transition: all 0.5s ease .4s;
+  }
+  nav .list li:nth-child(3) {
+    -webkit-transition: all 0.5s ease .6s;
+    transition: all 0.5s ease .6s;
+  }
+  nav .list li:nth-child(4) {
+    -webkit-transition: all 0.5s ease .8s;
+    transition: all 0.5s ease .8s;
+  }
+  nav .list li:nth-child(5) {
+    -webkit-transition: all 0.5s ease .10s;
+    transition: all 0.5s ease .10s;
+  }
+  nav .list li.fade {
+    opacity: 1;
   }
 }
 
@@ -2837,6 +2970,10 @@ nav .burger {
     height: 50px;
     width: 20%;
   }
+  nav .logo img {
+    height: 70px;
+    z-index: 2;
+  }
   nav .burger {
     height: 50px;
     width: 50px;
@@ -2844,13 +2981,15 @@ nav .burger {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    z-index: 2;
   }
   nav .list {
-    height: 0;
+    position: fixed;
+    height: 100vh;
     width: 100%;
-    right: 0;
-    top: 0;
-    display: none;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -2861,15 +3000,51 @@ nav .burger {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+    -webkit-clip-path: circle(100px at 90% -30%);
+            clip-path: circle(100px at 90% -30%);
+    -webkit-transition: all 1s ease-out;
+    transition: all 1s ease-out;
     background-color: #F58445;
-    -webkit-transition: .5s linear;
-    transition: .5s linear;
+  }
+  nav .list a {
+    color: #fff;
+    font-size: 20px;
+    font-weight: 300;
+  }
+  nav .list .fb {
+    display: block;
+  }
+  nav .list li {
+    opacity: 0;
+    margin-bottom: 20px;
   }
   nav .showNav {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    height: 100vh;
+    -webkit-clip-path: circle(1000px at 90% -10%);
+            clip-path: circle(1000px at 90% -10%);
+  }
+  nav .list li:nth-child(1) {
+    -webkit-transition: all 0.5s ease .2s;
+    transition: all 0.5s ease .2s;
+    margin-top: 50px;
+  }
+  nav .list li:nth-child(2) {
+    -webkit-transition: all 0.5s ease .4s;
+    transition: all 0.5s ease .4s;
+  }
+  nav .list li:nth-child(3) {
+    -webkit-transition: all 0.5s ease .6s;
+    transition: all 0.5s ease .6s;
+  }
+  nav .list li:nth-child(4) {
+    -webkit-transition: all 0.5s ease .8s;
+    transition: all 0.5s ease .8s;
+  }
+  nav .list li:nth-child(5) {
+    -webkit-transition: all 0.5s ease .10s;
+    transition: all 0.5s ease .10s;
+  }
+  nav .list li.fade {
+    opacity: 1;
   }
 }
 
@@ -2878,7 +3053,12 @@ nav .burger {
     height: calc(100% - 40px);
     width: 10%;
   }
+  nav .logo img {
+    height: 100px;
+    z-index: 2;
+  }
   nav .list {
+    position: absolute;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -2911,6 +3091,9 @@ nav .burger {
   }
   nav .list li a {
     margin-right: 20px;
+  }
+  nav .list .fb {
+    display: none;
   }
   nav .burger {
     display: none;
@@ -2922,7 +3105,11 @@ nav .burger {
     height: calc(100% - 40px);
     width: 10%;
   }
+  nav .logo img {
+    height: 110px;
+  }
   nav .list {
+    position: absolute;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -2955,6 +3142,9 @@ nav .burger {
   }
   nav .list li a {
     margin-right: 20px;
+  }
+  nav .list .fb {
+    display: none;
   }
   nav .burger {
     display: none;
@@ -3661,9 +3851,13 @@ nav .burger {
   color: #F58445;
 }
 
+.orangeNav {
+  color: #F58445;
+}
+
 @media (max-width: 576px) {
   .title {
-    font-size: 25px;
+    font-size: 20px;
   }
 }
 

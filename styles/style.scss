@@ -25,9 +25,13 @@
     color: $first-color;
 }
 
+.orangeNav {
+    color: $first-color;
+}
+
 @include media-sm {
     .title {
-        font-size: 25px;
+        font-size: 20px;
     }
 }
 
