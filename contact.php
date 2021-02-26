@@ -31,7 +31,7 @@
         <div class="phoneMailContainer">
             <a href="tel:+503665669" class="phone">
                 <i class="fas fa-phone-alt"></i>
-                <h1>503 665 669</h1>
+                <h1 style="color:#fff;">503 665 669</h1>
             </a>
             <a href="#" class="mail">
                 <i class="fas fa-envelope"></i>
