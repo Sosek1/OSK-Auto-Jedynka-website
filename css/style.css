@@ -432,6 +432,13 @@
   -ms-grid-column: 1;
   -ms-grid-column-span: 1;
   grid-area: 2/1/2/2;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.numbers .eighty .number2 {
+  margin-right: 5px;
 }
 
 .numbers .thousand {
@@ -446,6 +453,13 @@
   -ms-grid-column: 3;
   -ms-grid-column-span: 1;
   grid-area: 2/3/2/4;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.numbers .thirteen .number3 {
+  margin-right: 5px;
 }
 
 .numbers .filter {
@@ -495,10 +509,19 @@
   background-color: #fff;
 }
 
-.opinionContainer .opinion .photo img {
-  width: 100%;
-  height: 100%;
-  border-radius: 150px;
+.opinionContainer .opinion .photo1 {
+  background-image: url(/css/boy-524512_640.jpg);
+  background-size: cover;
+}
+
+.opinionContainer .opinion .photo2 {
+  background-image: url(/css/young-girl-2763395_640.jpg);
+  background-size: cover;
+}
+
+.opinionContainer .opinion .photo3 {
+  background-image: url(/css/boy-2119178_640.jpg);
+  background-size: cover;
 }
 
 .opinionContainer .opinion .fa-quote-left {

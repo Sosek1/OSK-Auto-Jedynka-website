@@ -105,18 +105,24 @@
         <span class="orange">po nas nikt nie musi douczać.</span>
     </div>
 
-    <div class="title">Jedynka w <span class="orange">liczbach</span></div>
+    <div class="title trick">Jedynka w <span class="orange">liczbach</span></div>
 
     <div class="numbers">
         <div class="filter"></div>
         <i class="fas fa-graduation-cap"></i>
-        <div class="procent eighty" data-target="80">80%</div>
+        <div class="procent eighty">
+            <div class="number2" data-target="80"></div>
+            <div class="sign">%</div>
+        </div>
         <div class="property graduation">Wysoka zdawalność</div>
         <i class="fas fa-users"></i>
-        <div class="procent thousand" data-target="1000">1000</div>
+        <div class="procent thousand" data-target="1000"></div>
         <div class="property students">Liczba kursantów</div>
         <i class="fas fa-history"></i>
-        <div class="procent thirteen" data-target="13">13 lat</div>
+        <div class="procent thirteen">
+            <div class="number3" data-target="13"></div>
+            <div class="sign">lat</div>
+        </div>
         <div class="property years">Doświadczenie</div>
     </div>
 
@@ -126,33 +132,28 @@
         <div class="prev" onclick="plusSlides(-1)">
             <i class="fas fa-chevron-left"></i></div>
         <div class="opinion fade">
-            <div class="photo">
-                <img src="css/portret1.png" alt="">
-            </div>
+            <div class="photo photo1"></div>
             <i class="fas fa-quote-left"></i>
-            <p class="quotation">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores, in dicta. Vero
-                aperiam voluptate magnam impedit, delectus sunt quia sapiente sed deleniti illum? Corrupti ad,
-                voluptatum pariatur unde cum ducimus.</p>
+            <p class="quotation">Gdy przyszedłem na pierwsze praktyki bardzo się stresowałem, ponieważ nigdy wcześniej
+                nie jezdziłem samochodem. Obecnie, po zakończeniu kursu czuję na drodzę pewność siebie, egzamin
+                praktyczny udało mi się zdać za pierwszym razem.</p>
             <i class="fas fa-quote-right"></i>
         </div>
         <div class="opinion fade">
-            <div class="photo">
-                <img src="css/portret1.png" alt="">
-            </div>
+            <div class="photo photo2"></div>
             <i class="fas fa-quote-left"></i>
-            <p class="quotation">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores, in dicta. Vero
-                aperiam voluptate magnam impedit, delectus sunt quia sapiente sed deleniti illum? Corrupti ad,
-                voluptatum pariatur unde cum ducimus.</p>
+            <p class="quotation">Bardzo polecam kursy jazdy w Autojedynce! Dzięki szkoleniu umiem bezpiecznie poruszać
+                się po drodze. Szczególnie podobały mi się wykłady, dzięki którym bez problemu zdałam egzamin
+                teoretyczny.</p>
             <i class="fas fa-quote-right"></i>
         </div>
         <div class="opinion fade">
-            <div class="photo">
-                <img src="css/portret1.png" alt="">
-            </div>
+            <div class="photo photo3"></div>
             <i class="fas fa-quote-left"></i>
-            <p class="quotation">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores, in dicta. Vero
-                aperiam voluptate magnam impedit, delectus sunt quia sapiente sed deleniti illum? Corrupti ad,
-                voluptatum pariatur unde cum ducimus.</p>
+            <p class="quotation">Gdy wsiadłem pierwszy raz za kierownicę i próbowowałem ruszyć z miejsca myślałem, że
+                jazda samochodem nie jest dlamnie. Dzięki miłej atmosferze panującej podaczas praktyk, pozbyłem się
+                stresu i nabyłem umiejętności, przez które zdałem egzamin i mogę bezpiecznie poruszać się po drogach.
+            </p>
             <i class="fas fa-quote-right"></i>
         </div>
         <div class="next" onclick="plusSlides(1)">
@@ -267,7 +268,7 @@
     <script src="scripts/menu.js"></script>
     <script src="scripts/modal.js"></script>
     <script src="scripts/slider.js"></script>
-    <!-- <script src="scripts/counter.js"></script> -->
+    <script src="scripts/counter.js"></script>
     <script src="scripts/copy.js"></script>
     <script>
         AOS.init();
