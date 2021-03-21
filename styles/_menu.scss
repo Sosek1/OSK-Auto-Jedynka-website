@@ -27,11 +27,16 @@ nav {
         a {
             text-decoration: none;
             color: $third-color;
+            transition: .2s linear;
 
             i {
                 font-size: 30px;
                 color: $second-color;
             }
+        }
+
+        a:hover {
+            color: $first-color;
         }
     }
 

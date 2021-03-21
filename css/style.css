@@ -2774,11 +2774,17 @@ nav .list {
 nav .list a {
   text-decoration: none;
   color: #000;
+  -webkit-transition: .2s linear;
+  transition: .2s linear;
 }
 
 nav .list a i {
   font-size: 30px;
   color: #fff;
+}
+
+nav .list a:hover {
+  color: #F58445;
 }
 
 nav .burger {
@@ -3931,6 +3937,75 @@ nav .dissapear {
     font-size: 28px;
     margin-top: 30px;
     margin-bottom: 30px;
+  }
+}
+
+.kodeksContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 0 auto;
+  min-height: 100vh;
+}
+
+.kodeksContainer h1 {
+  font-weight: 500;
+  margin: 20px 0 20px 0;
+}
+
+.kodeksContainer p {
+  font-size: 18px;
+}
+
+@media (max-width: 576px) {
+  .kodeksContainer {
+    width: 90vw;
+  }
+  .kodeksContainer h1 {
+    font-size: 20px;
+    text-align: center;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 992px) and (orientation: portrait) {
+  .kodeksContainer {
+    width: 80vw;
+  }
+  .kodeksContainer h1 {
+    font-size: 30px;
+    text-align: center;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 992px) and (orientation: landscape) {
+  .kodeksContainer {
+    width: 80vw;
+  }
+  .kodeksContainer h1 {
+    font-size: 25px;
+    text-align: center;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1200px) {
+  .kodeksContainer {
+    width: 80vw;
+  }
+  .kodeksContainer h1 {
+    font-size: 30px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .kodeksContainer {
+    width: 70vw;
+  }
+  .kodeksContainer h1 {
+    font-size: 30px;
   }
 }
 

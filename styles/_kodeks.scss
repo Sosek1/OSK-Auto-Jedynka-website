@@ -1,0 +1,74 @@
+.kodeksContainer {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    min-height: 100vh;
+
+    h1 {
+        font-weight: 500;
+        margin: 20px 0 20px 0;
+
+    }
+
+    p {
+        font-size: 18px;
+    }
+
+}
+
+@include media-sm {
+
+    .kodeksContainer {
+        width: 90vw;
+
+        h1 {
+            font-size: 20px;
+            text-align: center;
+        }
+    }
+
+
+}
+
+@include media-md-p {
+    .kodeksContainer {
+        width: 80vw;
+
+        h1 {
+            font-size: 30px;
+            text-align: center;
+        }
+    }
+}
+
+@include media-md-l {
+    .kodeksContainer {
+        width: 80vw;
+
+        h1 {
+            font-size: 25px;
+            text-align: center;
+        }
+    }
+
+}
+
+@include media-lg {
+    .kodeksContainer {
+        width: 80vw;
+
+        h1 {
+            font-size: 30px;
+        }
+    }
+}
+
+@include media-xl {
+    .kodeksContainer {
+        width: 70vw;
+
+        h1 {
+            font-size: 30px;
+        }
+    }
+}

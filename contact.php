@@ -48,6 +48,7 @@
             <li class="links"><a href="index.html">Strona główna</a></li>
             <li class="links"><a href="offer.html">Oferta</a></li>
             <li class="links"><a href="faq.html">FAQ</a></li>
+            <li class="links"><a href="kodeks.html">Dekalog EkoKierowcy</a></li>
             <li class="links"><a href="gallery.html">Galeria</a></li>
             <li class="links"><a href="contact.php">Kontakt</a></li>
             <li class="links fb">
@@ -124,8 +125,7 @@
             <div class="contactData">
                 <h2>Adres</h2>
                 <h3>OSK - Nefrytowa 5 Kraków</h3>
-                <h3>Sale wykładowe - Dwór Czeczów
-                    Ul. Popiłuszki</h3>
+                <h3>Sale wykładowe - Aleja Pokoju 5a</h3>
                 <h2 style="margin-top:20px;">Dane kontaktowe</h2>
                 <h3>Telefon: 503 665 669 </h3>
                 <h3>Email: autojedynka@gmail.com</h3>
@@ -137,6 +137,7 @@
                 <a href="index.html">Strona główna</a>
                 <a href="offer.html">Oferta</a>
                 <a href="faq.html">FAQ</a>
+                <a href="kodeks.html">Dekalog EkoKierowcy</a>
                 <a href="gallery.html">Galeria</a>
                 <a href="contact.html" style="color:#F58445;">Kontakt</a>
             </div>
