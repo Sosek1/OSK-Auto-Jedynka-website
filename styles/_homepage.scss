@@ -122,25 +122,20 @@
         flex-direction: column;
         align-items: center;
         z-index: 2;
-        justify-content: space-around;
+        justify-content: center;
         background-color: #fff;
         border: 5px solid $first-color;
-        @include center;
 
         img {
             height: 60%;
         }
 
         .close {
+            position: absolute;
+            top: 5%;
+            left: 5%;
+            transform: translate(-5%, -5%);
             font-size: 20px;
-            margin: 0;
-            flex-basis: 5%;
-            align-self: flex-end;
-        }
-
-        i {
-            flex-basis: 25%;
-            color: $first-color;
         }
 
     }

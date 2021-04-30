@@ -157,17 +157,11 @@
       -ms-flex-align: center;
           align-items: center;
   z-index: 2;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  background-color: #fff;
-  border: 5px solid #F58445;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  align-items: center;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  background-color: #fff;
+  border: 5px solid #F58445;
 }
 
 .banner .modal img {
@@ -175,18 +169,12 @@
 }
 
 .banner .modal .close {
+  position: absolute;
+  top: 5%;
+  left: 5%;
+  -webkit-transform: translate(-5%, -5%);
+          transform: translate(-5%, -5%);
   font-size: 20px;
-  margin: 0;
-  -ms-flex-preferred-size: 5%;
-      flex-basis: 5%;
-  -ms-flex-item-align: end;
-      align-self: flex-end;
-}
-
-.banner .modal i {
-  -ms-flex-preferred-size: 25%;
-      flex-basis: 25%;
-  color: #F58445;
 }
 
 .banner .close,
