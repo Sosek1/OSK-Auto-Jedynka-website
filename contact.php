@@ -105,6 +105,7 @@
             <input type="submit" name="submit" class="send-btn" value="Wyślij">
         </form>
     </div>
+    <div class="title">Znajdź <span class="orange">nas</span></div>
     <div id="map"></div>
 
     <footer>

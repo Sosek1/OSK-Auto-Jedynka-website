@@ -171,7 +171,7 @@
 }
 
 .banner .modal img {
-  height: 90%;
+  height: 60%;
 }
 
 .banner .modal .close {
@@ -2434,17 +2434,17 @@ footer .copyBar {
     height: 10%;
     font-size: 15px;
   }
-  .questionsContainer {
+  .questionsContainerr {
     min-height: 40vh;
   }
-  .questionsContainer .question h3 {
+  .questionsContainerr .question h3 {
     font-size: 20px;
   }
-  .questionsContainer .enroll2 {
+  .questionsContainerr .enroll2 {
     width: 200px;
     height: 50px;
   }
-  .questionsContainer .enroll2 a {
+  .questionsContainerr .enroll2 a {
     font-size: 20px;
   }
   footer {
@@ -3416,6 +3416,12 @@ nav .dissapear {
   top: 10px;
   border-left: 8px solid #FFA502;
   border-radius: 4px;
+}
+
+#map {
+  width: 100%;
+  height: 40vh;
+  margin-bottom: 20px;
 }
 
 @media (max-width: 576px) {
