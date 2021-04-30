@@ -105,6 +105,7 @@
             <input type="submit" name="submit" class="send-btn" value="Wyślij">
         </form>
     </div>
+    <div id="map"></div>
 
     <footer>
         <div class="about2">
@@ -148,7 +149,10 @@
 
     <script src="scripts/menu.js"></script>
     <script src="scripts/copy.js"></script>
-
+    <script src="scripts/map.js"></script>
+    <script async defer
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC0_gA3rsVHTOvN6xKUjWIAAqJCSL_iHTA&callback=initMap">
+    </script>
     <script>
         AOS.init();
     </script>

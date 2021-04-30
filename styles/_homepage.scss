@@ -125,6 +125,11 @@
         justify-content: space-around;
         background-color: #fff;
         border: 5px solid $first-color;
+        @include center;
+
+        img {
+            height: 90%;
+        }
 
         .close {
             font-size: 20px;
@@ -133,16 +138,11 @@
             align-self: flex-end;
         }
 
-        h1 {
-            flex-basis: 70%;
-            text-align: center;
-            font-weight: 300;
-        }
-
         i {
             flex-basis: 25%;
             color: $first-color;
         }
+
     }
 
     .close,
@@ -523,6 +523,7 @@
 .questionsContainer {
     display: flex;
     flex-direction: column;
+    justify-content: space-around;
     position: relative;
     overflow-x: hidden;
     margin-bottom: 50px;
@@ -803,10 +804,6 @@ footer {
             width: 200px;
             height: 200px;
 
-            h1 {
-                font-size: 20px;
-            }
-
             i {
                 font-size: 40px;
             }
@@ -992,7 +989,7 @@ footer {
     }
 
     .questionsContainer {
-        height: 60vh;
+        min-height: 60vh;
 
         .question {
             margin: 10px 0;
@@ -1004,7 +1001,7 @@ footer {
         }
 
         .enroll2 {
-            width: 170px;
+            width: 200px;
             height: 50px;
 
             a {
@@ -1113,10 +1110,6 @@ footer {
         .modal {
             width: 300px;
             height: 300px;
-
-            h1 {
-                font-size: 30px;
-            }
 
             i {
                 font-size: 60px;
@@ -1257,7 +1250,7 @@ footer {
     }
 
     .questionsContainer {
-        height: 40vh;
+        min-height: 40vh;
 
         .question {
             height: 20%;
@@ -1406,11 +1399,6 @@ footer {
             width: 300px;
             height: 200px;
 
-            h1 {
-                margin-top: 20px;
-                font-size: 20px;
-            }
-
             i {
                 font-size: 50px;
             }
@@ -1549,7 +1537,7 @@ footer {
     }
 
     .questionsContainer {
-        height: 90vh;
+        min-height: 90vh;
 
         .question {
             height: 20%;
@@ -1693,11 +1681,6 @@ footer {
             width: 300px;
             height: 300px;
 
-            h1 {
-                margin-top: 20px;
-                font-size: 25px;
-            }
-
             i {
                 margin-top: 20px;
                 font-size: 60px;
@@ -1838,7 +1821,7 @@ footer {
     }
 
     .questionsContainer {
-        height: 40vh;
+        min-height: 40vh;
 
         .question {
 
@@ -1999,11 +1982,6 @@ footer {
             width: 300px;
             height: 300px;
 
-            h1 {
-                margin-top: 20px;
-                font-size: 25px;
-            }
-
             i {
                 margin-top: 20px;
                 font-size: 60px;
@@ -2127,7 +2105,7 @@ footer {
     }
 
     .questionsContainer {
-        height: 40vh;
+        min-height: 40vh;
 
         .question {
             h3 {

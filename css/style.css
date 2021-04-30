@@ -161,6 +161,17 @@
       justify-content: space-around;
   background-color: #fff;
   border: 5px solid #F58445;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.banner .modal img {
+  height: 90%;
 }
 
 .banner .modal .close {
@@ -170,13 +181,6 @@
       flex-basis: 5%;
   -ms-flex-item-align: end;
       align-self: flex-end;
-}
-
-.banner .modal h1 {
-  -ms-flex-preferred-size: 70%;
-      flex-basis: 70%;
-  text-align: center;
-  font-weight: 300;
 }
 
 .banner .modal i {
@@ -727,6 +731,8 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   position: relative;
   overflow-x: hidden;
   margin-bottom: 50px;
@@ -1098,9 +1104,6 @@ footer .copyBar {
     width: 200px;
     height: 200px;
   }
-  .banner .modal h1 {
-    font-size: 20px;
-  }
   .banner .modal i {
     font-size: 40px;
   }
@@ -1312,7 +1315,7 @@ footer .copyBar {
     color: #fff;
   }
   .questionsContainer {
-    height: 60vh;
+    min-height: 60vh;
   }
   .questionsContainer .question {
     margin: 10px 0;
@@ -1322,7 +1325,7 @@ footer .copyBar {
     border-bottom: none;
   }
   .questionsContainer .enroll2 {
-    width: 170px;
+    width: 200px;
     height: 50px;
   }
   .questionsContainer .enroll2 a {
@@ -1413,9 +1416,6 @@ footer .copyBar {
   .banner .modal {
     width: 300px;
     height: 300px;
-  }
-  .banner .modal h1 {
-    font-size: 30px;
   }
   .banner .modal i {
     font-size: 60px;
@@ -1569,7 +1569,7 @@ footer .copyBar {
     font-size: 15px;
   }
   .questionsContainer {
-    height: 40vh;
+    min-height: 40vh;
   }
   .questionsContainer .question {
     height: 20%;
@@ -1708,10 +1708,6 @@ footer .copyBar {
   .banner .modal {
     width: 300px;
     height: 200px;
-  }
-  .banner .modal h1 {
-    margin-top: 20px;
-    font-size: 20px;
   }
   .banner .modal i {
     font-size: 50px;
@@ -1864,7 +1860,7 @@ footer .copyBar {
     font-size: 15px;
   }
   .questionsContainer {
-    height: 90vh;
+    min-height: 90vh;
   }
   .questionsContainer .question {
     height: 20%;
@@ -2000,10 +1996,6 @@ footer .copyBar {
   .banner .modal {
     width: 300px;
     height: 300px;
-  }
-  .banner .modal h1 {
-    margin-top: 20px;
-    font-size: 25px;
   }
   .banner .modal i {
     margin-top: 20px;
@@ -2158,7 +2150,7 @@ footer .copyBar {
     font-size: 15px;
   }
   .questionsContainer {
-    height: 40vh;
+    min-height: 40vh;
   }
   .questionsContainer .question h3 {
     font-size: 20px;
@@ -2315,10 +2307,6 @@ footer .copyBar {
     width: 300px;
     height: 300px;
   }
-  .banner .modal h1 {
-    margin-top: 20px;
-    font-size: 25px;
-  }
   .banner .modal i {
     margin-top: 20px;
     font-size: 60px;
@@ -2447,7 +2435,7 @@ footer .copyBar {
     font-size: 15px;
   }
   .questionsContainer {
-    height: 40vh;
+    min-height: 40vh;
   }
   .questionsContainer .question h3 {
     font-size: 20px;
