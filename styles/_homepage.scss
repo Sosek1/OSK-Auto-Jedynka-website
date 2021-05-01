@@ -127,7 +127,7 @@
         border: 5px solid $first-color;
 
         img {
-            height: 60%;
+            height: 100%;
         }
 
         .close {
@@ -136,6 +136,7 @@
             right: 5%;
             transform: translate(-5%, -5%);
             font-size: 20px;
+            color: $first-color;
         }
 
     }
@@ -1978,7 +1979,6 @@ footer {
             height: 300px;
 
             i {
-                margin-top: 20px;
                 font-size: 60px;
             }
         }
@@ -2099,7 +2099,7 @@ footer {
         }
     }
 
-    .questionsContainerr {
+    .questionsContainer {
         min-height: 40vh;
 
         .question {

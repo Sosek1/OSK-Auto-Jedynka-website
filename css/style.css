@@ -165,16 +165,17 @@
 }
 
 .banner .modal img {
-  height: 60%;
+  height: 100%;
 }
 
 .banner .modal .close {
   position: absolute;
   top: 5%;
-  left: 5%;
+  right: 5%;
   -webkit-transform: translate(-5%, -5%);
           transform: translate(-5%, -5%);
   font-size: 20px;
+  color: #F58445;
 }
 
 .banner .close,
@@ -2296,7 +2297,6 @@ footer .copyBar {
     height: 300px;
   }
   .banner .modal i {
-    margin-top: 20px;
     font-size: 60px;
   }
   .features {
@@ -2422,17 +2422,17 @@ footer .copyBar {
     height: 10%;
     font-size: 15px;
   }
-  .questionsContainerr {
+  .questionsContainer {
     min-height: 40vh;
   }
-  .questionsContainerr .question h3 {
+  .questionsContainer .question h3 {
     font-size: 20px;
   }
-  .questionsContainerr .enroll2 {
+  .questionsContainer .enroll2 {
     width: 200px;
     height: 50px;
   }
-  .questionsContainerr .enroll2 a {
+  .questionsContainer .enroll2 a {
     font-size: 20px;
   }
   footer {
@@ -2843,8 +2843,8 @@ nav .dissapear {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    -webkit-clip-path: circle(100px at 90% -20%);
-            clip-path: circle(100px at 90% -20%);
+    -webkit-clip-path: circle(50px at 90% -20%);
+            clip-path: circle(50px at 90% -20%);
     -webkit-transition: all .5s ease-out;
     transition: all .5s ease-out;
     background-color: #F58445;
@@ -2977,7 +2977,7 @@ nav .dissapear {
     display: block;
   }
   nav .list li {
-    margin-bottom: 20px;
+    margin-bottom: 10px;
   }
   nav .showNav {
     -webkit-clip-path: circle(1000px at 90% -10%);
@@ -3409,7 +3409,6 @@ nav .dissapear {
 #map {
   width: 100%;
   height: 40vh;
-  margin-bottom: 20px;
 }
 
 @media (max-width: 576px) {
