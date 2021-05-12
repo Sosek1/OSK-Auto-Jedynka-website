@@ -16,14 +16,14 @@ if(isset($_POST['submit'])){
 
   try{
     $mail->isSMTP();
-    $mail->Host = 'smtp.gmail.com';
+    $mail->Host = 'bartektest.xaa.pl';
     $mail->SMTPAuth = true;
-    $mail->Username = 'bscode03@gmail.com'; // Gmail address which you want to use as SMTP server
-    $mail->Password = 'Bartek321!?'; // Gmail address Password
-    $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
-    $mail->Port = '587';
+    $mail->Username = '_mainaccount@bartektest.xaa.pl'; // Gmail address which you want to use as SMTP server
+    $mail->Password = 'oHv4WtYc8'; // Gmail address Password
+    $mail->SMTPSecure = 'ssl';
+    $mail->Port = '465';
 
-    $mail->setFrom('bscode03@gmail.com'); // Gmail address which you used as SMTP server
+    $mail->setFrom('_mainaccount@bartektest.xaa.pl'); // Gmail address which you used as SMTP server
     $mail->addAddress('bscode03@gmail.com'); // Email address where you want to receive emails (you can use any of your gmail address including the gmail address which you used as SMTP server)
 
     $mail->isHTML(true);
